@@ -24,8 +24,6 @@ NanoPi R4S 刷入 [iStoreOS](https://zhida.zhihu.com/search?content_id=27217388
 ssh root@192.168.100.1
 ```
 
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **第二步：查看当前分区情况**
 
 ```bash
@@ -52,8 +50,6 @@ Number  Start   End     Size    File system  Flags
 3       403MB   10.0GB  9597MB  ext4
 ```
 
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **第三步：调整分区大小**
 
 ```bash
@@ -64,8 +60,6 @@ Yes/No? yes
 End? [10.0GB]? 31GB  # 输入新的结束位置（可使用磁盘总容量）
 (parted) quit
 ```
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **注意**：
 
@@ -79,9 +73,6 @@ End? [10.0GB]? 31GB  # 输入新的结束位置（可使用磁盘总容量）
 ```bash
 resize2fs -p /dev/mmcblk0p3
 ```
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **说明**：
 
 - `/dev/mmcblk0p3` 表示第 3 个分区（根据您的实际情况调整）
@@ -93,9 +84,6 @@ resize2fs -p /dev/mmcblk0p3
 ```bash
 df -h
 ```
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 查看根分区（`/` 或 `/overlay`）的容量是否已更新。
 
 ### ⚠️ 注意事项
@@ -103,5 +91,5 @@ df -h
 1. **设备名称**：
 - NanoPi R4S 使用 eMMC 时通常是 `/dev/mmcblk0` 或 `/dev/mmcblk2`
 - 分区号为 3（`/dev/mmcblk0p3`）
-1. **无需重启**：整个过程可以在线完成，不需要重启系统[http://blog.zhheo.com](https://link.zhihu.com/?target=http%3A//blog.zhheo.com)
+1. **无需重启**：整个过程可以在线完成，不需要重启系统
 2. **备份重要数据**：虽然可以在线扩容，但建议操作前备份重要配置
