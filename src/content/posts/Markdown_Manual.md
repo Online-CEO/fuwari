@@ -375,23 +375,8 @@ const hello = "world";
 ```
 
 ```markdown
-列表：- 1. [ ]
-代码：```语言
-表格：| 头 | --: |
-引用：>
-分割：---
-转义：* ` \
----
-
 > 💡 **终极建议**：  
 > 1. 先在本地用 `pnpm run dev` 预览，确认渲染效果再发布  
 > 2. 用 [Markdown Lint](https://github.com/DavidAnson/vscode-markdownlint) 统一团队风格  
 > 3. 重要文章先写草稿（`draft: true`），Peer Review 后再上线  
-
-需要的话，我可以：
-- ✅ 输出 **Fuwari 专属 Markdown 配置片段**（`astro.config.mjs` 集成 MDX/数学公式）
-- ✅ 提供 **批量转换 Hexo/Hugo 文章的脚本**（自动适配 Frontmatter + 图片路径）
-- ✅ 生成 **SEO 友好的文章模板**（含结构化数据 + 分享优化）
-
-告诉我你的具体需求，我立刻定制 👇
 ```
