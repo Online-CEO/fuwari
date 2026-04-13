@@ -1,5 +1,5 @@
 ---
-title: 如何查看、删除和禁用 Windows 运行历史记录
+title: Windows 如何查看、删除和禁用 运行历史记录
 published: 2026-04-13
 description: ''
 image: ''
@@ -11,8 +11,7 @@ lang: ''
 从 Windows 95 时代开始，「[运行]」对话框就是 Windows 系统中一个极其实用的功能。通过它，我们能快速启动各种 Windows 工具、打开文件和文件夹、启动应用，甚至访问网络资源。更方便的是，直接敲入一些 [CMD] 命令或者修改[注册表]，它都能一步执行到位。
 
 默认情况下，Windows 会自动保存你执行过的命令，这样下次输入时就能自动补全，让重复操作更加便捷。
-![](https://i-blog.csdnimg.cn/img_convert/9c2bf6e830a4830f0824be098edcff6a.jpeg)
-![CSDN图标](https://i-blog.csdnimg.cn/img_convert/9c2bf6e830a4830f0824be098edcff6a.jpeg "CSDN图标")
+![图1](https://img.0433.dpdns.org/file/AgACAgUAAyEGAATSBiixAAMJadxGY1ciBmFgqboWIJ0b6YWHFHAAAlkSaxuCveFWjW0sfsA9fAkBAAMCAAN5AAM7BA.jpeg "图1")
 
 <!-- ![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==) -->
 
@@ -31,9 +30,7 @@ lang: ''
 
 2在「常规」选项卡的「隐私」区域中点击「清除」按钮。
 
-![](https://i-blog.csdnimg.cn/img_convert/1aca2c8ffe1c9ba2e89071cd856dfada.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图2](https://pic2.zhimg.com/v2-015a17152766fb0e70e3fa3a025da0b3_1440w.jpg "图2")
 
 编辑
 
@@ -57,17 +54,13 @@ lang: ''
 
 - 右键删除`RunMRU`键，就可以清除所有记录。
 
-![](https://i-blog.csdnimg.cn/img_convert/5a5d03f0574be0e63d19389943e0c8c0.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图3](https://pic2.zhimg.com/v2-628a3dbfe8d61fc91a17a5054eb5b6c9_1440w.jpg "图3")
 
 编辑
 
 - 如果只想删除特定条目，可以在右侧窗格中逐一删除。（每条记录对应一个字母如 a, b, c…）
 
-![](https://i-blog.csdnimg.cn/img_convert/f0409b259e98b226592ac5209916710d.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图4](https://pic2.zhimg.com/v2-6dba725d4c21fcf546e59bc2a4064b49_1440w.jpg "图4")
 
 编辑
 
@@ -81,17 +74,13 @@ lang: ''
 
 1使用`Windows + I`快捷键打开「设置」，在左侧面板中选择「隐私和安全性」，然后点击右侧的「常规」选项。
 
-![](https://i-blog.csdnimg.cn/img_convert/37c1b00da00ac5e0c19c9d36098278ae.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图5](https://pic1.zhimg.com/v2-cb5a50c7aad96a93a97cd249196c187e_1440w.jpg "图5")
 
 编辑
 
 2关掉「允许 Windows 跟踪应用启动」开关，这样「运行」的历史记录功能就会被禁用。
 
-![](https://i-blog.csdnimg.cn/img_convert/d996a6c835630a28e1de5c84bb5da7ad.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图6](https://pic3.zhimg.com/v2-f28045a90020662eaa79388104602cc0_1440w.jpg "图6")
 
 编辑
 
@@ -110,9 +99,7 @@ lang: ''
 - `0` 禁用「运行」历史记录
 - `1` 启用「运行」历史记录
 
-![](https://i-blog.csdnimg.cn/img_convert/83825cffd70e5b974a22993d276cb1a2.jpeg)
-
-[](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+![图7](https://picx.zhimg.com/v2-22fd5102a9f18cb34580c4bafa6e6381_1440w.jpg "图7")
 
 编辑
 
