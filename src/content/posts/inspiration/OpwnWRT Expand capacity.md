@@ -1,10 +1,10 @@
 ---
 title: OpenWRT 扩充系统盘
 published: 2026-04-13
-description: 'NanoPi R4S 刷入 [iStoreOS](https://zhida.zhihu.com/search?content_id=272173889&content_type=Article&match_order=1&q=iStoreOS&zhida_source=entity) 后，默认根分区只有 2GB 左右，需要通过以下步骤扩容到完整容量'
+description: 'NanoPi R4S 刷入 [iStoreOS]后，默认根分区只有 2GB 左右，需要通过以下步骤扩容到完整容量'
 image: ''
 tags: [OpenWRT,Disk]
-category: 'Examples'
+category: '生活灵感'
 draft: false 
 lang: ''
 ---
