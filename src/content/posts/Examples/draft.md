@@ -4,6 +4,7 @@ published: 2022-07-01
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: true
+lang: "en"
 ---
 
 # This Article is a Draft

@@ -6,7 +6,7 @@ image: ''
 tags: [Markdown]
 category: '生活灵感'
 draft: false 
-lang: ''
+lang: "zh_CN"
 ---
 ## **🔤 基础语法速查**
 

@@ -1,9 +1,95 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# **关于我 | 优阅 UPSUB**
 
-::github{repo="saicaca/fuwari"}
+> 🤖 自动化工程师的数字笔记 · 🔧 让工具为人服务 · ☕ 在代码与生活间找平衡
+> 
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+---
+
+## **👋 你好，我是 优阅**
+
+一名**自动化工程师**，日常和 PLC、脚本、系统配置打交道。相信「重复的事情应该交给机器」，也相信「好用的工具应该隐形，而不是抢戏」。
+
+博客名「**优阅**」有两层意思：
+
+- **优**：优化流程、优选工具、追求高效
+- **阅**：阅读技术、阅己成长、阅览生活
+
+域名 `upsubs.com` 则是：*Upgrade Your Subroutines* —— 升级你的子程序，也升级你的日常。
+
+---
+
+## **📚 这里写什么？**
+
+| 分类 | 内容示例 |
+| --- | --- |
+| 🔧 **自动化实战** | PLC 通信调试、Python 脚本提效、工业协议踩坑记录 |
+| 🪟 **Windows 调优** | 注册表技巧、PowerShell 自动化、组策略/安全设置 |
+| ⚡ **效率工具链** | AutoHotkey 脚本、Obsidian 工作流、命令行神器推荐 |
+| 💡 **生活灵感** | 数码好物、桌面美学、阅读笔记、城市漫步 |
+
+> 内容原则：**能复现、有注释、避坑优先**。理论讲原理，实战给代码。
+> 
+
+---
+
+## **❓ 为什么写这个博客？**
+
+1. **给自己**：好记性不如烂键盘，踩过的坑、调通的配置，存档防忘
+2. **给同行**：自动化/工控领域中文实战内容不多，希望能帮到同样爱折腾的你
+3. **给未来**：技术会迭代，但「拆解问题→验证方案→沉淀文档」的思维值得长期练习
+
+---
+
+## **🛠️ 常用技术栈 & 工具**
+
+```yaml
+工业侧: 
+  - PLC: Siemens S7-1200/1500, Mitsubishi FX
+  - 协议: Modbus TCP/RTU, OPC UA, S7 Communication
+  - 软件: TIA Portal, GX Works2, WinCC
+
+效率侧:
+  - 语言: Python, PowerShell, AutoHotkey
+  - 系统: Windows 11 + WSL2, Docker Desktop
+  - 工具: Obsidian, Git, VS Code, Everything
+
+生活侧:
+  - 记录: 手机摄影 + 轻修图
+  - 放松: 手冲咖啡 / 科幻影视 / 城市骑行
+```
+
+---
+
+## **📬 联系 & 互动**
+
+- ✉️ 邮箱：`upsub@outlook.com`（技术探讨/合作请带简要说明）
+- 🐙 GitHub：`@Online-CEO`
+- 💬 博客评论区：通常 24h 内回复，欢迎提问/指正/安利工具
+- 🔔 更新节奏：不追求日更，但篇篇力求「写完就能用」
+
+> 📌 **小互动**：你最近在用哪个自动化工具/脚本？欢迎在评论区分享，好想法我会专门写篇测评～
+> 
+
+---
+
+## **⚠️ 免责声明**
+
+- 文中涉及的系统修改、注册表操作、工业设备调试，**请务必在测试环境验证**
+- 作者不对因直接应用文中方案导致的数据丢失/设备异常负责
+- 部分工具/软件请支持正版，本文仅作技术交流
+
+---
+
+## **🌱 近期状态（2026 年春）**
+
+- 📖 在读：《*自动化系统架构设计*》《*深度工作*》
+- 🔧 在折腾：`Python + OPC UA 数据采集监控面板`
+- ☕ 咖啡消耗：本周 4 杯（手冲耶加雪菲 ✅）
+- 🎯 小目标：把博客部署流程也自动化掉（CI/CD 走起）
+
+---
+
+> “把复杂的事情变简单，把简单的事情做稳定。”感谢阅读，愿我们都能在自动化与生活之间，找到属于自己的节奏 🤝
+> 
+
+---

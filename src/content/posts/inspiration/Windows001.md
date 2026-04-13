@@ -6,7 +6,7 @@ image: ''
 tags: [Windows]
 category: '生活灵感'
 draft: false 
-lang: ''
+lang: "zh_CN"
 ---
 ### 常用快捷键
 
