@@ -77,7 +77,7 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
-		<!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js) Google Analytics page view tracking --> 
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CJM9E52GEV"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
@@ -462,6 +462,7 @@ if (window?.swup?.hooks) {
 	document.addEventListener('swup:enable', setup)
 }
 
+// Google Analytics page view tracking
 if (window?.swup?.hooks) {
 	window.swup.hooks.on('page:view', () => {
 		const gtag = (window as Window & {
