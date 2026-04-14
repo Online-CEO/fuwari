@@ -60,6 +60,10 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		{
+			name: "隐私",
+			url: "/privacy/",
+		},
 		// {
 		// 	name: "GitHub",
 		// 	url: "https://github.com/Online-CEO/fuwari", // Internal links should not include the base path, as it is automatically added
@@ -69,28 +73,10 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "/favicon/apple-touch-icon.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "优阅博客",
 	bio: "专注 Astro,TypeScript,Cloudflare 实战教程,分享效率工具与成长思考,开发笔记,持续成长记录.",
-	links: [
-		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
-		},
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/Online-CEO/fuwari",
-		},
-	],
+	links: [],
 };
 
 export const licenseConfig: LicenseConfig = {
