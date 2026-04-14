@@ -77,6 +77,14 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CJM9E52GEV"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-CJM9E52GEV');
+		</script>
 
 		<title>{pageTitle}</title>
 
@@ -452,6 +460,21 @@ if (window?.swup?.hooks) {
 	setup()
 } else {
 	document.addEventListener('swup:enable', setup)
+}
+
+if (window?.swup?.hooks) {
+	window.swup.hooks.on('page:view', () => {
+		const gtag = (window as Window & {
+			gtag?: (...args: unknown[]) => void;
+		}).gtag
+		if (typeof gtag === 'function') {
+			gtag('config', 'G-CJM9E52GEV', {
+				page_path: window.location.pathname + window.location.search,
+				page_title: document.title,
+				page_location: window.location.href,
+			});
+		}
+	})
 }
 
 let backToTopBtn = document.getElementById('back-to-top-btn');
