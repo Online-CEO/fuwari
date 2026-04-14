@@ -471,21 +471,6 @@ if (window?.swup?.hooks) {
 }
 
 // Google Analytics page view tracking
-if (window?.swup?.hooks) {
-	window.swup.hooks.on('page:view', () => {
-		const gtag = (window as Window & {
-			gtag?: (...args: unknown[]) => void;
-		}).gtag
-		if (typeof gtag === 'function') {
-			gtag('config', 'G-CJM9E52GEV', {
-				page_path: window.location.pathname + window.location.search,
-				page_title: document.title,
-				page_location: window.location.href,
-			});
-		}
-	})
-}
-
 let backToTopBtn = document.getElementById('back-to-top-btn');
 let toc = document.getElementById('toc-wrapper');
 let navbar = document.getElementById('navbar-wrapper')
