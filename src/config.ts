@@ -16,13 +16,13 @@ export const siteConfig: SiteConfig = {
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		enable: true,
+		src: "assets/images/demo-banner.jpeg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, // Display the credit text of the banner image
+			text: "Homutan", // Credit text to be displayed
+			url: "https://www.pixiv.net/artworks/129430356", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -31,11 +31,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave this array empty to use the default favicon
-		// {
-		// 	src: "/favicon/icon.png", // Path of the favicon, relative to the /public directory
-		// 	theme: "light", // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		// 	sizes: "32x32", // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		// },
+		{
+			src: "/favicon/icon.png", // Path of the favicon, relative to the /public directory
+			theme: "light", // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			sizes: "32x32", // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		},
 		{
 			src: "/favicon.ico", // 传统浏览器
 			sizes: "32x32",
@@ -73,7 +73,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/favicon/apple-touch-icon.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "优阅博客",
 	bio: "专注 Astro,TypeScript,Cloudflare 实战教程,分享效率工具与成长思考,开发笔记,持续成长记录.",
 	links: [],
