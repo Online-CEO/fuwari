@@ -33,25 +33,25 @@ export const siteConfig: SiteConfig = {
 		// Leave this array empty to use the default favicon
 		{
 			src: "/favicon/icon.png", // Path of the favicon, relative to the /public directory
-			theme: "light", // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			// theme: "light", // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 			sizes: "32x32", // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		},
-		{
-			src: "/favicon.ico", // 传统浏览器
-			sizes: "32x32",
-		},
-		{
-			src: "/favicon/icon-192.png", // Android / PWA
-			sizes: "192x192",
-		},
-		{
-			src: "/favicon/icon-512.png", // Android Splash / PWA
-			sizes: "512x512",
-		},
-		{
-			src: "/favicon/apple-touch-icon.png", // iOS 主屏幕
-			sizes: "180x180",
-		},
+		// {
+		// 	src: "/favicon.ico", // 传统浏览器
+		// 	sizes: "32x32",
+		// },
+		// {
+		// 	src: "/favicon/icon-192.png", // Android / PWA
+		// 	sizes: "192x192",
+		// },
+		// {
+		// 	src: "/favicon/icon-512.png", // Android Splash / PWA
+		// 	sizes: "512x512",
+		// },
+		// {
+		// 	src: "/favicon/apple-touch-icon.png", // iOS 主屏幕
+		// 	sizes: "180x180",
+		// },
 	],
 };
 
