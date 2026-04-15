@@ -1,9 +1,9 @@
 ---
-title: Astro 搭建个人博客
+title: Astro 搭建个人博客 [Fuwari]
 published: 2026-04-15
 description: ''
 image: ''
-tags: [Astro]
+tags: [Astro,Fuwari]
 category: '生活灵感'
 draft: false 
 lang: 'zh_CN'
