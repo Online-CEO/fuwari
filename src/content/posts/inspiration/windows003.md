@@ -2,7 +2,7 @@
 title: Windows 三大文件搜索神器 Everything、Listary、AnyTXT Searcher 功能特色与区别详解
 published: 2026-04-15
 description: '在 Windows 系统中，自带搜索往往响应迟缓、结果杂乱。当电脑存储数十万份文件时，“找不到文件”已成为许多办公族、开发者与内容创作者的效率瓶颈。今天，我们深度盘点 Windows 平台最受认可的三款本地搜索工具：Everything、Listary 与 AnyTXT Searcher。它们各自的核心逻辑是什么？适用场景有何差异？普通用户又该如何搭配？一文带你彻底理清。'
-# image: 'https://img.0433.dpdns.org/file/AgACAgUAAyEGAATSBiixAAMMad8vROc-fZCyUIfVX_MySPDQWYAAAgcPaxv9cvhW6i0SsxDo9eYBAAMCAAN5AAM7BA.png'
+image: ''
 tags: [Windows]
 category: '生活灵感'
 draft: false 

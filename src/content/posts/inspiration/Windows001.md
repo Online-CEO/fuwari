@@ -2,7 +2,7 @@
 title: Windows实用小技巧合集
 published: 2026-04-13
 description: 'Windows 系统内置了大量“官方未重点宣传”但极度实用的功能。无论是日常办公提速、释放磁盘空间，还是保护隐私数据，掌握这些原生技巧都能让你的电脑焕然一新。本文精选 12 个经过实测的 Windows 实用小技巧，全面兼容 Win10/Win11，无需安装第三方软件，安全、轻量、开箱即用。建议收藏备用，随时调用。'
-# image: '/images/Icons/windows-11.png'
+image: ''
 tags: [Windows]
 category: '生活灵感'
 draft: false 
