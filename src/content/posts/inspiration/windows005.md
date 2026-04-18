@@ -3,7 +3,7 @@ title: 电脑崩溃前必看的 5 个备份技巧，重要文件永不丢失（W
 published: 2026-04-18
 description: ''
 image: ''
-tags: [Windows]
+tags: [Windows,Backup]
 category: '生活灵感'
 draft: false 
 lang: 'zh_CN'
