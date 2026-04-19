@@ -1,0 +1,89 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6FBFF"/>
+      <stop offset="0.5" stop-color="#E5F1FF"/>
+      <stop offset="1" stop-color="#FFF2E2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="1100" y1="180" x2="1490" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0" y1="0" x2="380" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8C45B"/>
+      <stop offset="1" stop-color="#E89B22"/>
+    </linearGradient>
+    <linearGradient id="folderBack" x1="0" y1="0" x2="340" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD78A"/>
+      <stop offset="1" stop-color="#F4B44A"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#1E293B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1310" cy="154" r="126" fill="#D7ECFF"/>
+  <circle cx="1460" cy="750" r="168" fill="#FFE3B8"/>
+  <circle cx="186" cy="760" r="112" fill="#D9F4E7"/>
+
+  <g opacity="0.7">
+    <path d="M84 188C84 159.281 107.281 136 136 136H530C558.719 136 582 159.281 582 188V214H84V188Z" fill="#CFE3FF"/>
+    <path d="M102 246C102 221.699 121.699 202 146 202H546C570.301 202 590 221.699 590 246V266H102V246Z" fill="#B5D1F7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="108" width="952" height="684" rx="32" fill="#FFFFFF"/>
+  </g>
+
+  <rect x="88" y="108" width="952" height="84" rx="32" fill="#EAF2FB"/>
+  <circle cx="146" cy="150" r="10" fill="#FB7185"/>
+  <circle cx="178" cy="150" r="10" fill="#FBBF24"/>
+  <circle cx="210" cy="150" r="10" fill="#34D399"/>
+
+  <rect x="132" y="238" width="334" height="186" rx="24" fill="url(#folderBack)"/>
+  <path d="M152 282C152 264.327 166.327 250 184 250H290L324 286H438C455.673 286 470 300.327 470 318V406C470 423.673 455.673 438 438 438H184C166.327 438 152 423.673 152 406V282Z" fill="url(#folderFront)"/>
+  <rect x="204" y="320" width="176" height="18" rx="9" fill="#FFF4DA"/>
+  <rect x="204" y="354" width="138" height="18" rx="9" fill="#FFE8BE"/>
+  <rect x="204" y="388" width="112" height="18" rx="9" fill="#FFE8BE"/>
+
+  <rect x="520" y="238" width="430" height="430" rx="28" fill="#F8FBFF"/>
+  <rect x="560" y="284" width="150" height="124" rx="18" fill="#D9E9FF"/>
+  <rect x="734" y="284" width="176" height="18" rx="9" fill="#AFC7EA"/>
+  <rect x="734" y="320" width="148" height="18" rx="9" fill="#C8D9F2"/>
+  <rect x="734" y="356" width="112" height="18" rx="9" fill="#D8E5F7"/>
+
+  <rect x="560" y="446" width="350" height="22" rx="11" fill="#DBEAFE"/>
+  <rect x="560" y="494" width="286" height="22" rx="11" fill="#DCEEF4"/>
+  <rect x="560" y="542" width="318" height="22" rx="11" fill="#E9E5FF"/>
+  <rect x="560" y="590" width="246" height="22" rx="11" fill="#E9F7E8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1096" y="172" width="392" height="560" rx="34" fill="url(#panel)"/>
+  </g>
+  <rect x="1140" y="234" width="300" height="24" rx="12" fill="#8CB4FF"/>
+  <rect x="1140" y="278" width="246" height="14" rx="7" fill="#A8B8D6"/>
+  <rect x="1140" y="316" width="268" height="14" rx="7" fill="#A8B8D6"/>
+
+  <rect x="1140" y="384" width="300" height="86" rx="20" fill="#132238"/>
+  <rect x="1170" y="414" width="118" height="18" rx="9" fill="#F8C45B"/>
+  <path d="M1334 430L1360 456L1418 398" stroke="#52D4A6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1140" y="502" width="300" height="86" rx="20" fill="#132238"/>
+  <rect x="1170" y="532" width="146" height="18" rx="9" fill="#A5E3D0"/>
+  <rect x="1340" y="526" width="70" height="30" rx="15" fill="#1F8A70"/>
+
+  <rect x="1140" y="620" width="300" height="44" rx="22" fill="#22324B"/>
+  <rect x="1168" y="633" width="106" height="18" rx="9" fill="#C6D4EC"/>
+  <rect x="1288" y="633" width="120" height="18" rx="9" fill="#8CB4FF"/>
+
+  <text x="132" y="604" fill="#0F172A" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="54" font-weight="700">
+    Windows 文件整理技巧
+  </text>
+  <text x="132" y="666" fill="#334155" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="500">
+    7 个实用习惯，解决桌面杂乱和下载文件夹混乱
+  </text>
+  <text x="132" y="732" fill="#64748B" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="500">
+    适用于 Win10 / Win11 · 原生方法 · 更适合长期发布与搜索流量
+  </text>
+</svg>

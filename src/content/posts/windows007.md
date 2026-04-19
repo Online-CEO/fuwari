@@ -1,8 +1,8 @@
 ---
-title: 电脑越用越乱？7 个 Windows 文件整理习惯，让桌面和资料库长期保持清爽
+title: Windows 文件整理技巧：7 个实用习惯，解决桌面杂乱和下载文件夹混乱
 published: 2026-04-19
-description: '桌面堆满截图、下载夹越来越乱、重要文件总是找不到？这篇文章整理了 7 个适合普通用户长期坚持的 Windows 文件管理习惯，全部基于系统原生功能，兼容 Win10 和 Win11。'
-image: ''
+description: '桌面太乱、下载文件夹越堆越多、重要资料总是找不到？这篇文章总结了 7 个适合 Win10 和 Win11 的 Windows 文件整理技巧，帮助你长期保持电脑清爽、好找、易备份。'
+image: './windows007-cover.svg'
 tags: [Windows, 效率, 文件管理]
 category: '生活灵感'
 draft: false
