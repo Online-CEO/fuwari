@@ -1,7 +1,7 @@
 ---
 title: Astro 搭建个人博客 [Fuwari]
 published: 2026-04-15
-description: ''
+description: '前期纠结了很长时间,再三考虑之后还是选择了Astro'
 image: ''
 tags: [Astro,Fuwari]
 category: '生活灵感'
@@ -9,7 +9,6 @@ draft: false
 lang: 'zh_CN'
 ---
 ## 选择搭建语言
-前期纠结了很长时间,再三考虑之后还是选择了Astro
 
 | 特性 | Hexo | Hugo | Astro 🌟 | Next.js |
 | --- | --- | --- | --- | --- |

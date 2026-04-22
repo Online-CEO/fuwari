@@ -1,0 +1,104 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="1490" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FBFF"/>
+      <stop offset="0.52" stop-color="#EEF4FF"/>
+      <stop offset="1" stop-color="#FFF3E7"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="200" y1="130" x2="1020" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7FAFF"/>
+    </linearGradient>
+    <linearGradient id="heroCard" x1="1080" y1="170" x2="1460" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A36"/>
+      <stop offset="1" stop-color="#1E2D52"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="1062" y1="210" x2="1392" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB86B"/>
+      <stop offset="1" stop-color="#FF6F61"/>
+    </linearGradient>
+    <linearGradient id="astroCore" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFDF8F"/>
+      <stop offset="0.55" stop-color="#FF914D"/>
+      <stop offset="1" stop-color="#FF5F6D"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#1E293B" flood-opacity="0.12"/>
+    </filter>
+    <filter id="soft" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1372" cy="146" r="120" fill="#DDEAFF"/>
+  <circle cx="1486" cy="736" r="154" fill="#FFE0BC"/>
+  <circle cx="174" cy="742" r="108" fill="#DFF5EA"/>
+
+  <g opacity="0.7">
+    <path d="M96 186C96 157.281 119.281 134 148 134H510C538.719 134 562 157.281 562 186V208H96V186Z" fill="#D6E6FF"/>
+    <path d="M114 238C114 213.699 133.699 194 158 194H544C568.301 194 588 213.699 588 238V258H114V238Z" fill="#BDD7FB"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="108" width="956" height="686" rx="32" fill="url(#panel)"/>
+  </g>
+  <rect x="92" y="108" width="956" height="86" rx="32" fill="#EDF3FC"/>
+  <circle cx="150" cy="151" r="10" fill="#FB7185"/>
+  <circle cx="182" cy="151" r="10" fill="#FBBF24"/>
+  <circle cx="214" cy="151" r="10" fill="#34D399"/>
+
+  <rect x="136" y="234" width="868" height="430" rx="28" fill="#F9FBFF"/>
+  <rect x="176" y="272" width="308" height="344" rx="24" fill="#111C34"/>
+  <rect x="206" y="316" width="160" height="22" rx="11" fill="#90B3FF"/>
+  <rect x="206" y="356" width="216" height="14" rx="7" fill="#7889B3"/>
+  <rect x="206" y="388" width="192" height="14" rx="7" fill="#7889B3"/>
+  <rect x="206" y="438" width="248" height="92" rx="20" fill="#182646"/>
+  <path d="M246 496C266 458 286 420 308 380C332 438 356 496 380 556C353 532 312 534 286 564C278 533 264 511 246 496Z" fill="url(#astroCore)"/>
+  <circle cx="368" cy="420" r="9" fill="#FFD88D"/>
+  <circle cx="392" cy="390" r="6" fill="#FFC08A"/>
+  <circle cx="416" cy="442" r="5" fill="#FFAA72"/>
+  <rect x="206" y="564" width="110" height="16" rx="8" fill="#FFB774"/>
+  <rect x="328" y="564" width="82" height="16" rx="8" fill="#8FD8C0"/>
+
+  <rect x="524" y="272" width="440" height="126" rx="24" fill="#FFFFFF"/>
+  <rect x="556" y="304" width="182" height="22" rx="11" fill="#D8E6FF"/>
+  <rect x="556" y="344" width="360" height="16" rx="8" fill="#E8EEF9"/>
+  <rect x="556" y="376" width="314" height="16" rx="8" fill="#E8EEF9"/>
+
+  <rect x="524" y="426" width="206" height="92" rx="22" fill="#EAF2FF"/>
+  <rect x="554" y="454" width="110" height="16" rx="8" fill="#89AEFF"/>
+  <rect x="554" y="486" width="86" height="16" rx="8" fill="#BACDF5"/>
+
+  <rect x="758" y="426" width="206" height="92" rx="22" fill="#FFF1E8"/>
+  <rect x="788" y="454" width="122" height="16" rx="8" fill="#FFAB7D"/>
+  <rect x="788" y="486" width="94" height="16" rx="8" fill="#FFD1B7"/>
+
+  <rect x="524" y="546" width="440" height="70" rx="22" fill="#FFFFFF"/>
+  <rect x="556" y="568" width="372" height="18" rx="9" fill="#DDE8FA"/>
+  <rect x="556" y="596" width="278" height="18" rx="9" fill="#E9EEF7"/>
+
+  <g filter="url(#soft)">
+    <rect x="1092" y="166" width="398" height="470" rx="34" fill="url(#heroCard)"/>
+  </g>
+  <circle cx="1260" cy="334" r="106" fill="url(#accent)"/>
+  <path d="M1210 384C1234 338 1258 292 1284 238C1312 308 1340 378 1368 448C1337 420 1290 422 1260 456C1250 418 1234 396 1210 384Z" fill="#FFF6EA"/>
+  <circle cx="1354" cy="256" r="9" fill="#FFD89B"/>
+  <circle cx="1382" cy="288" r="6" fill="#FFBDA0"/>
+  <circle cx="1178" cy="274" r="7" fill="#FFD89B"/>
+
+  <rect x="1142" y="458" width="298" height="76" rx="20" fill="#13213D"/>
+  <rect x="1172" y="486" width="128" height="18" rx="9" fill="#8FB1FF"/>
+  <rect x="1318" y="486" width="90" height="18" rx="9" fill="#FFB774"/>
+
+  <rect x="1142" y="552" width="298" height="44" rx="22" fill="#243453"/>
+  <rect x="1170" y="565" width="114" height="18" rx="9" fill="#C8D6EF"/>
+  <rect x="1298" y="565" width="110" height="18" rx="9" fill="#9DBBFF"/>
+
+  <rect x="110" y="684" width="1380" height="126" rx="28" fill="#FFFFFF" fill-opacity="0.82"/>
+  <rect x="110" y="684" width="1380" height="126" rx="28" stroke="#D9E5F7"/>
+
+  <text x="142" y="740" fill="#0F172A" font-family="'Segoe UI', 'Arial', sans-serif" font-size="54" font-weight="700">Astro for Blogs</text>
+  <text x="142" y="782" fill="#334155" font-family="'Segoe UI', 'Arial', sans-serif" font-size="28" font-weight="500">Performance, SEO, and long-term maintainability</text>
+  <text x="1088" y="782" text-anchor="end" fill="#64748B" font-family="'Segoe UI', 'Arial', sans-serif" font-size="24" font-weight="500">Lightweight content sites, cleaner architecture</text>
+</svg>
