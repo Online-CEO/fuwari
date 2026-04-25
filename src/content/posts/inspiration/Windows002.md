@@ -2,7 +2,7 @@
 title: Windows 如何查看、删除和禁用 运行历史记录
 published: 2026-04-04
 description: '从 Windows 95 时代开始，「运行」对话框就是 Windows 系统中一个非常实用的功能。通过它，我们可以快速启动系统工具、打开文件夹、运行命令，也能查看或清理常用历史记录。'
-image: '/images/windows/ClearHistory.png'
+image: ''
 tags: [Windows]
 category: '生活灵感'
 draft: false 
