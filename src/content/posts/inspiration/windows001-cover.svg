@@ -1,0 +1,91 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="72" x2="1490" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="0.5" stop-color="#E6F0FF"/>
+      <stop offset="1" stop-color="#ECFAF0"/>
+    </linearGradient>
+    <linearGradient id="windowCard" x1="90" y1="108" x2="1028" y2="792" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F9FF"/>
+    </linearGradient>
+    <linearGradient id="sidePanel" x1="1098" y1="172" x2="1488" y2="734" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8EC5FF"/>
+      <stop offset="1" stop-color="#4F8FFF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#1E293B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1354" cy="142" r="122" fill="#DCEBFF"/>
+  <circle cx="1482" cy="748" r="146" fill="#DDF7E3"/>
+  <circle cx="170" cy="754" r="100" fill="#FFE7C6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="108" width="952" height="684" rx="34" fill="url(#windowCard)"/>
+  </g>
+  <rect x="88" y="108" width="952" height="84" rx="34" fill="#EAF2FB"/>
+  <circle cx="146" cy="150" r="10" fill="#FB7185"/>
+  <circle cx="178" cy="150" r="10" fill="#FBBF24"/>
+  <circle cx="210" cy="150" r="10" fill="#34D399"/>
+
+  <rect x="138" y="236" width="388" height="416" rx="28" fill="#F8FBFF"/>
+  <rect x="174" y="278" width="222" height="20" rx="10" fill="#A6C1E8"/>
+  <rect x="174" y="316" width="168" height="16" rx="8" fill="#D8E5F5"/>
+  <rect x="174" y="352" width="132" height="16" rx="8" fill="#D8E5F5"/>
+
+  <rect x="174" y="410" width="312" height="192" rx="24" fill="#EAF2FF"/>
+  <rect x="206" y="442" width="120" height="120" rx="22" fill="url(#tile)"/>
+  <path d="M266 442V562" stroke="#DDECFF" stroke-width="12"/>
+  <path d="M206 502H326" stroke="#DDECFF" stroke-width="12"/>
+  <rect x="350" y="446" width="104" height="16" rx="8" fill="#8EB1FF"/>
+  <rect x="350" y="476" width="86" height="16" rx="8" fill="#BFD4FA"/>
+  <rect x="350" y="510" width="72" height="16" rx="8" fill="#BFD4FA"/>
+  <rect x="350" y="548" width="94" height="18" rx="9" fill="#D7E6FF"/>
+
+  <rect x="552" y="236" width="436" height="416" rx="28" fill="#FFFFFF"/>
+  <rect x="596" y="280" width="178" height="18" rx="9" fill="#98BAF5"/>
+  <rect x="596" y="316" width="144" height="16" rx="8" fill="#D4E0F2"/>
+
+  <rect x="596" y="392" width="352" height="78" rx="18" fill="#F7FAFF"/>
+  <rect x="626" y="420" width="142" height="18" rx="9" fill="#AED2FF"/>
+  <rect x="802" y="414" width="112" height="34" rx="17" fill="#DBEAFE"/>
+  <path d="M830 431H886" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+
+  <rect x="596" y="496" width="352" height="78" rx="18" fill="#F7FAFF"/>
+  <rect x="626" y="524" width="172" height="18" rx="9" fill="#D7EDCC"/>
+  <rect x="824" y="518" width="88" height="34" rx="17" fill="#DCFCE7"/>
+  <path d="M848 535L864 551L892 523" stroke="#059669" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1096" y="172" width="392" height="560" rx="34" fill="url(#sidePanel)"/>
+  </g>
+  <rect x="1140" y="232" width="210" height="24" rx="12" fill="#8DB5FF"/>
+  <rect x="1140" y="276" width="258" height="14" rx="7" fill="#AAB9D7"/>
+  <rect x="1140" y="310" width="202" height="14" rx="7" fill="#AAB9D7"/>
+
+  <rect x="1140" y="380" width="304" height="92" rx="22" fill="#13243C"/>
+  <rect x="1172" y="410" width="116" height="18" rx="9" fill="#8DC2FF"/>
+  <rect x="1312" y="404" width="98" height="34" rx="17" fill="#1E90FF"/>
+
+  <rect x="1140" y="498" width="304" height="92" rx="22" fill="#13243C"/>
+  <rect x="1172" y="528" width="150" height="18" rx="9" fill="#A8E2CC"/>
+  <rect x="1340" y="520" width="70" height="34" rx="17" fill="#1F8A70"/>
+
+  <rect x="1140" y="618" width="304" height="44" rx="22" fill="#24344F"/>
+  <rect x="1168" y="631" width="108" height="18" rx="9" fill="#D1DDF2"/>
+  <rect x="1292" y="631" width="116" height="18" rx="9" fill="#9DC3FF"/>
+
+  <text x="132" y="710" fill="#0F172A" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="52" font-weight="700">
+    Windows 实用小技巧合集
+  </text>
+  <text x="132" y="770" fill="#334155" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="500">
+    原生功能整理 · 更适合 Win10 / Win11 日常使用
+  </text>
+</svg>

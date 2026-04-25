@@ -1,8 +1,8 @@
 ---
-title: Windows实用小技巧合集
+title: Windows 实用小技巧合集
 published: 2026-04-12
-description: 'Windows 系统内置了大量“官方未重点宣传”但极度实用的功能。无论是日常办公提速、释放磁盘空间，还是保护隐私数据，掌握这些原生技巧都能让你的电脑焕然一新。本文精选 12 个经过实测的 Windows 实用小技巧，全面兼容 Win10/Win11，无需安装第三方软件，安全、轻量、开箱即用。建议收藏备用，随时调用。'
-image: ''
+description: 'Windows 系统内置了不少实用功能。无论是日常办公提速、释放磁盘空间，还是保护隐私数据，掌握这些原生技巧都能让常见操作更顺手。本文整理了 12 个适合 Win10 和 Win11 的 Windows 实用小技巧。'
+image: './windows001-cover.svg'
 tags: [Windows]
 category: '生活灵感'
 draft: false 
@@ -13,7 +13,7 @@ lang: "zh_CN"
 
 - 恢复已经关闭的网页 ：Ctrl + Shift + T
 - 文件资源管理器：Win+E
-- 现实桌面：Win+D
+- 显示桌面：Win+D
 - 打开窗口菜单:Alt+Space [快捷键+M(移动) 可拖回屏幕外的窗口]
 
 ## 常用运行指令：Win+R

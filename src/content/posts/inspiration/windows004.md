@@ -2,7 +2,7 @@
 title: 数字断舍离：3 步打造零干扰的专注工作流（Win10/Win11 原生方案）
 published: 2026-04-17
 description: '你是否也经历过这样的场景：本想打开电脑写一份报告，却被弹出的消息提醒打断；为了找一个昨天下载的附件，在桌面、下载文件夹和微信记录之间来回切换；一天结束，电脑开着 20 个标签页、桌面堆满临时文件，真正推进的进度却寥寥无几。'
-image: ''
+image: './windows004-cover.svg'
 tags: [Windows]
 category: '生活灵感'
 draft: false 

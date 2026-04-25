@@ -1,17 +1,16 @@
 ---
 title: Windows 三大文件搜索神器 Everything、Listary、AnyTXT Searcher 功能特色与区别详解
 published: 2026-04-15
-description: '在 Windows 系统中，自带搜索往往响应迟缓、结果杂乱。当电脑存储数十万份文件时，“找不到文件”已成为许多办公族、开发者与内容创作者的效率瓶颈。今天，我们深度盘点 Windows 平台最受认可的三款本地搜索工具：Everything、Listary 与 AnyTXT Searcher。它们各自的核心逻辑是什么？适用场景有何差异？普通用户又该如何搭配？一文带你彻底理清。'
-image: ''
+description: '在 Windows 系统中，自带搜索往往响应较慢、结果不够集中。本文对比 Everything、Listary 与 AnyTXT Searcher 三款常见本地搜索工具，帮助你判断各自的特点与适用场景。'
+image: './windows003-cover.svg'
 tags: [Windows]
 category: '生活灵感'
 draft: false 
 lang: 'zh_CN'
 ---
-![图1](https://img.0433.dpdns.org/file/AgACAgUAAyEGAATSBiixAAMMad8vROc-fZCyUIfVX_MySPDQWYAAAgcPaxv9cvhW6i0SsxDo9eYBAAMCAAN5AAM7BA.png)
 ## **Everything：极速文件名搜索的“标杆”**
 
-Everything 由 David Carpenter 开发，凭借“毫秒级响应”在效率工具圈封神。其底层原理是直接读取 NTFS/ReFS 文件系统的 MFT（主文件表），完全绕过 Windows 索引服务，从而实现近乎实时的文件定位。
+Everything 由 David Carpenter 开发，最大的特点是响应非常快。其底层原理是直接读取 NTFS/ReFS 文件系统的 MFT（主文件表），完全绕过 Windows 索引服务，从而实现接近实时的文件定位。
 
 ### **🔍 核心功能特色**
 

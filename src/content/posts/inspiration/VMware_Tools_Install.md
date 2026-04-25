@@ -6,7 +6,7 @@ image: ''
 tags: [VMware]
 category: '生活灵感'
 draft: false 
-lang: ''
+lang: 'zh_CN'
 ---
 ### 一、推荐方式：open-vm-tools（自动安装，简单高效）
 

@@ -1,0 +1,90 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="118" y1="70" x2="1488" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFBFF"/>
+      <stop offset="0.48" stop-color="#EEF2FF"/>
+      <stop offset="1" stop-color="#FFF2E8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="92" y1="108" x2="1046" y2="794" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFF"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="1090" y1="168" x2="1488" y2="732" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A36"/>
+      <stop offset="1" stop-color="#1F2E55"/>
+    </linearGradient>
+    <linearGradient id="astroGlow" x1="1198" y1="244" x2="1386" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD98C"/>
+      <stop offset="0.55" stop-color="#FF9D5C"/>
+      <stop offset="1" stop-color="#FF6C6C"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#1E293B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1360" cy="140" r="118" fill="#E0E9FF"/>
+  <circle cx="1486" cy="744" r="150" fill="#FFE1C2"/>
+  <circle cx="176" cy="752" r="104" fill="#E4F7EB"/>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="108" width="956" height="684" rx="34" fill="url(#panel)"/>
+  </g>
+  <rect x="88" y="108" width="956" height="84" rx="34" fill="#EDF2FB"/>
+  <circle cx="146" cy="150" r="10" fill="#FB7185"/>
+  <circle cx="178" cy="150" r="10" fill="#FBBF24"/>
+  <circle cx="210" cy="150" r="10" fill="#34D399"/>
+
+  <rect x="136" y="236" width="870" height="420" rx="28" fill="#FAFBFF"/>
+  <rect x="176" y="274" width="292" height="346" rx="24" fill="#121C35"/>
+  <rect x="206" y="314" width="158" height="22" rx="11" fill="#91B4FF"/>
+  <rect x="206" y="354" width="208" height="14" rx="7" fill="#7D8DB5"/>
+  <rect x="206" y="386" width="180" height="14" rx="7" fill="#7D8DB5"/>
+  <rect x="206" y="438" width="236" height="122" rx="22" fill="#172745"/>
+  <path d="M246 508C268 468 292 428 316 382C342 448 368 514 392 578C365 550 324 550 296 580C287 548 270 524 246 508Z" fill="url(#astroGlow)"/>
+  <circle cx="370" cy="418" r="8" fill="#FFD48B"/>
+  <circle cx="396" cy="392" r="6" fill="#FFC08A"/>
+  <rect x="206" y="584" width="108" height="16" rx="8" fill="#FFB97B"/>
+  <rect x="326" y="584" width="84" height="16" rx="8" fill="#90D8C4"/>
+
+  <rect x="516" y="274" width="452" height="124" rx="24" fill="#FFFFFF"/>
+  <rect x="548" y="306" width="186" height="22" rx="11" fill="#DBE6FF"/>
+  <rect x="548" y="346" width="368" height="16" rx="8" fill="#E7EDF8"/>
+  <rect x="548" y="378" width="312" height="16" rx="8" fill="#E7EDF8"/>
+
+  <rect x="516" y="426" width="206" height="92" rx="22" fill="#EAF1FF"/>
+  <rect x="546" y="454" width="112" height="16" rx="8" fill="#8AAFFF"/>
+  <rect x="546" y="486" width="86" height="16" rx="8" fill="#BDD1F6"/>
+
+  <rect x="752" y="426" width="216" height="92" rx="22" fill="#FFF2E9"/>
+  <rect x="782" y="454" width="128" height="16" rx="8" fill="#FFAA7E"/>
+  <rect x="782" y="486" width="92" height="16" rx="8" fill="#FFD5BD"/>
+
+  <rect x="516" y="546" width="452" height="70" rx="22" fill="#FFFFFF"/>
+  <rect x="548" y="568" width="378" height="18" rx="9" fill="#DDE7FA"/>
+  <rect x="548" y="596" width="284" height="18" rx="9" fill="#E9EEF7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1096" y="172" width="392" height="560" rx="34" fill="url(#hero)"/>
+  </g>
+  <circle cx="1288" cy="334" r="108" fill="url(#astroGlow)"/>
+  <path d="M1238 386C1262 340 1286 294 1312 240C1340 310 1368 380 1396 450C1365 422 1318 424 1288 458C1278 420 1262 398 1238 386Z" fill="#FFF6EA"/>
+  <circle cx="1376" cy="258" r="8" fill="#FFD797"/>
+  <circle cx="1178" cy="278" r="7" fill="#FFD797"/>
+
+  <rect x="1142" y="462" width="300" height="74" rx="20" fill="#13213D"/>
+  <rect x="1172" y="490" width="130" height="18" rx="9" fill="#8FB2FF"/>
+  <rect x="1318" y="490" width="88" height="18" rx="9" fill="#FFB97B"/>
+
+  <rect x="1142" y="554" width="300" height="44" rx="22" fill="#243453"/>
+  <rect x="1170" y="567" width="116" height="18" rx="9" fill="#CBD7EE"/>
+  <rect x="1298" y="567" width="110" height="18" rx="9" fill="#9DBDFF"/>
+
+  <text x="132" y="712" fill="#0F172A" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="52" font-weight="700">
+    Astro 搭建个人博客
+  </text>
+  <text x="132" y="772" fill="#334155" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="500">
+    Fuwari 实战记录 · 选型、初始化与部署过程
+  </text>
+</svg>

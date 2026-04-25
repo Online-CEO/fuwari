@@ -6,7 +6,7 @@ image: ''
 tags: [OpenWRT,AList]
 category: '生活灵感'
 draft: false 
-lang: ''
+lang: 'zh_CN'
 ---
 ### AList 挂载为 OpenWrt 的本地磁盘
 

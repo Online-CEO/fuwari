@@ -6,7 +6,7 @@ image: ''
 tags: [OpenWRT]
 category: '生活灵感'
 draft: false 
-lang: ''
+lang: 'zh_CN'
 ---
 
 ## **📦 方案一：系统配置备份（推荐日常使用）**
