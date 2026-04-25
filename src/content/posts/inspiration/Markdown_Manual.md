@@ -1,7 +1,7 @@
 ---
-title: 📝 Markdown 完全使用指南（适配 Fuwari / Astro）
+title: 📝 Markdown 使用指南（适配 Fuwari / Astro）
 published: 2026-04-13
-description: '一份可直接收藏的 Markdown 速查手册，含 基础语法 + 高级技巧 + Fuwari 专属扩展 + 避坑指南，助你高效撰写技术博客。'
+description: '一份面向 Fuwari / Astro 的 Markdown 速查手册，包含基础语法、常用排版技巧、扩展写法与常见注意事项。'
 image: ''
 tags: [Markdown]
 category: '生活灵感'
@@ -341,13 +341,13 @@ src/content/
 
 ---
 
-## **🎁 一键复制模板（新建文章直接用）**
+## **文章模板**
 
 ```markdown
 ---
-title: 📝 Markdown 完全使用指南（适配 Fuwari / Astro）
+title: 📝 Markdown 使用指南（适配 Fuwari / Astro）
 published: 2026-04-13
-description: '一份可直接收藏的 Markdown 速查手册，含 基础语法 + 高级技巧 + Fuwari 专属扩展 + 避坑指南，助你高效撰写技术博客。'
+description: '一份面向 Fuwari / Astro 的 Markdown 速查手册，包含基础语法、常用排版技巧、扩展写法与常见注意事项。'
 image: ''
 tags: [Markdown]
 category: '生活灵感'
@@ -375,7 +375,7 @@ const hello = "world";
 ```
 
 ```markdown
-> 💡 **终极建议**：  
+> 💡 **使用建议**：  
 > 1. 先在本地用 `pnpm run dev` 预览，确认渲染效果再发布  
 > 2. 用 [Markdown Lint](https://github.com/DavidAnson/vscode-markdownlint) 统一团队风格  
 > 3. 重要文章先写草稿（`draft: true`），Peer Review 后再上线  

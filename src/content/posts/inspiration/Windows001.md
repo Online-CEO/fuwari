@@ -11,16 +11,16 @@ lang: "zh_CN"
 
 ## 常用快捷键
 
-- 恢复已经关闭的网页 ：Ctrl + Shift + T
-- 文件资源管理器：Win+E
-- 显示桌面：Win+D
-- 打开窗口菜单:Alt+Space [快捷键+M(移动) 可拖回屏幕外的窗口]
+- 恢复已经关闭的网页：`Ctrl + Shift + T`
+- 文件资源管理器：`Win + E`
+- 显示桌面：`Win + D`
+- 打开窗口菜单：`Alt + Space`，再按 `M` 可拖回屏幕外的窗口
 
-## 常用运行指令：Win+R
+## 常用运行指令：`Win + R`
     
--   ncpa.cpl : 网络适配器
--   gpedit.msc : 配置本地策略组
--   inetcpl.cpl  : Internet Properties
+- `ncpa.cpl`：网络适配器
+- `gpedit.msc`：配置本地组策略
+- `inetcpl.cpl`：Internet Properties
 
 
 ## **一、效率快捷键：不碰鼠标也能飞快操作**

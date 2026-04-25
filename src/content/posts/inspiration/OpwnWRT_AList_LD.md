@@ -1,6 +1,6 @@
 ---
 title: 将 AList 挂载为 OpenWrt 的本地磁盘
-published: 2026-04-13
+published: 2026-04-09
 description: 'AList 本身只是一个 WebDAV 服务，为了让路由器能把它当成本地硬盘，我们需要用到 Rclone 配合 Fuse 来挂载。'
 image: ''
 tags: [OpenWRT,AList]

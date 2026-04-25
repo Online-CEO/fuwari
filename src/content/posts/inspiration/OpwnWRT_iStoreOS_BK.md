@@ -1,6 +1,6 @@
 ---
 title: iStoreOS 完整备份指南（NanoPi R4S 适用）
-published: 2026-04-13
+published: 2026-04-08
 description: '备份分为 「轻量配置备份」 和 「全盘镜像备份」 两种方案，建议根据需求选择'
 image: ''
 tags: [OpenWRT]

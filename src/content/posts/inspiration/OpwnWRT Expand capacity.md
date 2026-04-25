@@ -1,6 +1,6 @@
 ---
 title: OpenWRT 扩充系统盘
-published: 2026-04-13
+published: 2026-04-10
 description: 'NanoPi R4S 刷入 iStoreOS 后，默认根分区通常只有 2GB 左右，可以通过下面的步骤扩容到完整容量。'
 image: ''
 tags: [OpenWRT,Disk]

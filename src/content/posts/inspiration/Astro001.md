@@ -1,5 +1,5 @@
 ---
-title: Astro 搭建个人博客 [Fuwari]
+title: Astro 搭建个人博客：Fuwari 实战记录
 published: 2026-04-15
 description: '对比多种博客方案后，我最终选择了 Astro 和 Fuwari。这里记录选型、初始化和实际搭建过程。'
 image: './astro001-cover.svg'
@@ -14,7 +14,7 @@ lang: 'zh_CN'
 | --- | --- | --- | --- | --- |
 | 底层技术 | Node.js | Go | 专属 .astro 语法 + 任意 UI 框架 | React |
 | 构建速度 | 慢（文章较多后可能变慢） | 很快 | 快 | 较快 |
-| 页面加载速度 | 取决于主题 | 取决于主题 | 极快（默认零 JS 产物） | 快（SSR/SSG，但会有 React 运行时负担） |
+| 页面加载速度 | 取决于主题 | 取决于主题 | 很快（默认零 JS 产物） | 快（SSR/SSG，但会有 React 运行时负担） |
 | 学习曲线 | 低（改配置即可） | 中（需要适应 Go 模板语法） | 中低（前端友好） | 高（需懂 React 和 App Router） |
 | 主题生态 | 丰富、成熟 | 丰富 | 快速增长中 | 较少（通常需要自己开发或买模板） |
 | 定位 | 传统静态博客生成器 | 传统静态博客生成器 | 现代内容优先 Web 框架 | 全栈 Web 应用框架 |
@@ -23,17 +23,13 @@ lang: 'zh_CN'
 
 ## Astro 部署 **🍥**Fuwari
 
-<aside>
-
-💡 <a href="https://docs.astro.build/zh-cn/reference/cli-reference" target="_blank" rel="noopener noreferrer">  [Astro CLI 命令] </a> 
-
-</aside>
+> 参考： [Astro CLI 命令](https://docs.astro.build/zh-cn/reference/cli-reference)
 
 ### 官方使用方法
 
 **使用方法 1**
 
-使用 <a href="https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md" target="_blank" rel="noopener noreferrer"> create-fuwari </a> 在本地初始化项目。
+使用 [create-fuwari](https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md) 在本地初始化项目。
 
 ```bash
 # npm
@@ -283,7 +279,7 @@ curl -s https://upsubs.com | grep 'rel="canonical"'
 
 ---
 
-### **🎁 附：一键部署加速脚本（可选）**
+### **附：部署辅助脚本（可选）**
 
 ```bash
 # 创建 deploy.sh（本地执行）

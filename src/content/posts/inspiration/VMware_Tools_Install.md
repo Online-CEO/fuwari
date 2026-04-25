@@ -1,6 +1,6 @@
 ---
 title: VMware Tools 安装详细教程（Ubuntu 虚拟机）
-published: 2026-04-13
+published: 2026-04-03
 description: '本教程适用于 Ubuntu 18.04/20.04/22.04 及以上版本，分为 自动安装（open-vm-tools） 和 手动安装（官方 VMware Tools） 两种方式。'
 image: ''
 tags: [VMware]
