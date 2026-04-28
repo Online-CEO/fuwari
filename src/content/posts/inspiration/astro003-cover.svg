@@ -1,0 +1,96 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="64" x2="1510" y2="844" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F2"/>
+      <stop offset="0.5" stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF7F1"/>
+    </linearGradient>
+    <linearGradient id="leftCard" x1="108" y1="124" x2="900" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7FAFC"/>
+    </linearGradient>
+    <linearGradient id="darkCard" x1="1040" y1="138" x2="1468" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F3A5F"/>
+    </linearGradient>
+    <linearGradient id="astroMark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFD987"/>
+      <stop offset="0.58" stop-color="#FF9553"/>
+      <stop offset="1" stop-color="#FF5D73"/>
+    </linearGradient>
+    <linearGradient id="nextGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#CFE0FF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1420" cy="118" r="94" fill="#FFE5C7"/>
+  <circle cx="1494" cy="742" r="144" fill="#DDEEFF"/>
+  <circle cx="170" cy="740" r="120" fill="#DDF6E9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="110" width="920" height="640" rx="34" fill="url(#leftCard)"/>
+    <rect x="1054" y="138" width="438" height="516" rx="34" fill="url(#darkCard)"/>
+  </g>
+
+  <rect x="90" y="110" width="920" height="88" rx="34" fill="#EEF5FB"/>
+  <circle cx="148" cy="154" r="10" fill="#FB7185"/>
+  <circle cx="180" cy="154" r="10" fill="#FBBF24"/>
+  <circle cx="212" cy="154" r="10" fill="#34D399"/>
+
+  <rect x="136" y="238" width="376" height="448" rx="28" fill="#111C34"/>
+  <rect x="180" y="286" width="146" height="20" rx="10" fill="#84A9FF"/>
+  <rect x="180" y="322" width="210" height="14" rx="7" fill="#7288B6"/>
+  <rect x="180" y="350" width="188" height="14" rx="7" fill="#7288B6"/>
+  <rect x="180" y="404" width="290" height="164" rx="24" fill="#1B2948"/>
+  <path d="M240 500C264 456 288 412 314 366C342 436 370 506 398 576C367 546 320 548 292 578C282 540 266 514 240 500Z" fill="url(#astroMark)"/>
+  <circle cx="382" cy="404" r="9" fill="#FFD88F"/>
+  <circle cx="408" cy="430" r="6" fill="#FFBA89"/>
+  <circle cx="350" cy="464" r="6" fill="#FFC477"/>
+  <rect x="180" y="592" width="110" height="16" rx="8" fill="#FFBC72"/>
+  <rect x="304" y="592" width="92" height="16" rx="8" fill="#8FD6BF"/>
+
+  <rect x="548" y="238" width="414" height="150" rx="28" fill="#FFFFFF"/>
+  <rect x="584" y="278" width="170" height="20" rx="10" fill="#DAE8FF"/>
+  <rect x="584" y="316" width="320" height="14" rx="7" fill="#E6EDF8"/>
+  <rect x="584" y="344" width="282" height="14" rx="7" fill="#E6EDF8"/>
+
+  <rect x="548" y="416" width="190" height="120" rx="24" fill="#F1F7FF"/>
+  <circle cx="644" cy="476" r="34" fill="#0F172A"/>
+  <path d="M630 458H648C654 458 658 462 658 468V494H648V472L622 494H612L640 468H630V458Z" fill="url(#nextGlow)"/>
+  <rect x="584" y="556" width="114" height="14" rx="7" fill="#A4BBEE"/>
+
+  <rect x="772" y="416" width="190" height="120" rx="24" fill="#FFF3EA"/>
+  <circle cx="866" cy="476" r="34" fill="#FFF0DD"/>
+  <path d="M844 486C858 460 872 434 888 408C905 450 922 492 940 534C921 518 893 520 876 538C870 516 860 498 844 486Z" fill="url(#astroMark)" transform="translate(-12 -28) scale(0.75)"/>
+  <rect x="806" y="556" width="118" height="14" rx="7" fill="#FFB184"/>
+
+  <rect x="548" y="568" width="414" height="78" rx="24" fill="#FFFFFF"/>
+  <rect x="584" y="594" width="336" height="16" rx="8" fill="#DDE8F8"/>
+  <rect x="584" y="620" width="240" height="16" rx="8" fill="#E8EEF7"/>
+
+  <circle cx="1274" cy="286" r="94" fill="#273B5E"/>
+  <path d="M1204 324C1230 276 1256 228 1284 176C1314 250 1344 324 1374 398C1340 366 1288 368 1256 404C1246 364 1228 338 1204 324Z" fill="#FFF6E8"/>
+  <circle cx="1354" cy="210" r="8" fill="#FFD08D"/>
+  <circle cx="1382" cy="248" r="6" fill="#FFB98F"/>
+  <circle cx="1178" cy="242" r="7" fill="#FFE1A0"/>
+
+  <rect x="1120" y="442" width="306" height="84" rx="22" fill="#13243F"/>
+  <rect x="1152" y="472" width="118" height="18" rx="9" fill="#9CBCFF"/>
+  <rect x="1286" y="472" width="104" height="18" rx="9" fill="#FFBC75"/>
+
+  <rect x="1120" y="544" width="306" height="44" rx="22" fill="#2A3F63"/>
+  <rect x="1148" y="557" width="98" height="18" rx="9" fill="#D3DEF3"/>
+  <rect x="1264" y="557" width="126" height="18" rx="9" fill="#8EB4FF"/>
+
+  <rect x="92" y="776" width="1400" height="92" rx="28" fill="#FFFFFF" fill-opacity="0.84"/>
+  <rect x="92" y="776" width="1400" height="92" rx="28" stroke="#D8E4F2"/>
+
+  <text x="132" y="830" fill="#0F172A" font-family="'Segoe UI', 'Arial', sans-serif" font-size="52" font-weight="700">Astro and SEO</text>
+  <text x="132" y="862" fill="#475569" font-family="'Segoe UI', 'Arial', sans-serif" font-size="26" font-weight="500">Clean structure, lightweight pages, better foundations for content sites</text>
+  <text x="1450" y="862" text-anchor="end" fill="#64748B" font-family="'Segoe UI', 'Arial', sans-serif" font-size="22" font-weight="500">Performance matters, but structure matters too</text>
+</svg>
