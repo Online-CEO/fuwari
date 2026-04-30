@@ -1,0 +1,96 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="104" y1="76" x2="1492" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED"/>
+      <stop offset="0.52" stop-color="#F3F8FF"/>
+      <stop offset="1" stop-color="#ECFDF3"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="86" y1="108" x2="1018" y2="786" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7FAFF"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="1098" y1="166" x2="1496" y2="734" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="1156" y1="416" x2="1428" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#86EFAC"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1468" cy="124" r="118" fill="#FFE7C7"/>
+  <circle cx="1510" cy="752" r="136" fill="#DFF1FF"/>
+  <circle cx="164" cy="752" r="110" fill="#DCFCE7"/>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="108" width="948" height="684" rx="34" fill="url(#panel)"/>
+    <rect x="1098" y="166" width="394" height="566" rx="34" fill="url(#hero)"/>
+  </g>
+
+  <rect x="88" y="108" width="948" height="84" rx="34" fill="#EDF4FC"/>
+  <circle cx="146" cy="150" r="10" fill="#FB7185"/>
+  <circle cx="178" cy="150" r="10" fill="#FBBF24"/>
+  <circle cx="210" cy="150" r="10" fill="#34D399"/>
+
+  <rect x="140" y="236" width="330" height="404" rx="28" fill="#122033"/>
+  <rect x="176" y="278" width="120" height="20" rx="10" fill="#8FB3FF"/>
+  <rect x="176" y="316" width="168" height="14" rx="7" fill="#6E86B1"/>
+  <rect x="176" y="344" width="144" height="14" rx="7" fill="#6E86B1"/>
+  <rect x="176" y="396" width="258" height="92" rx="24" fill="#1D2F4B"/>
+  <circle cx="244" cy="442" r="30" fill="#243B60"/>
+  <path d="M244 428V456" stroke="#D6E4FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 442H258" stroke="#D6E4FF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="290" y="424" width="104" height="14" rx="7" fill="#FFB86C"/>
+  <rect x="290" y="450" width="88" height="14" rx="7" fill="#8FDAC3"/>
+  <rect x="176" y="526" width="106" height="14" rx="7" fill="#FFB86C"/>
+  <rect x="296" y="526" width="94" height="14" rx="7" fill="#8FDAC3"/>
+  <rect x="176" y="558" width="178" height="14" rx="7" fill="#6E86B1"/>
+
+  <rect x="502" y="236" width="484" height="186" rx="28" fill="#FFFFFF"/>
+  <rect x="540" y="276" width="184" height="20" rx="10" fill="#DCE9FB"/>
+  <rect x="540" y="314" width="368" height="14" rx="7" fill="#E8EFF9"/>
+  <rect x="540" y="342" width="330" height="14" rx="7" fill="#E8EFF9"/>
+  <rect x="846" y="272" width="96" height="40" rx="20" fill="#EAF8F1"/>
+  <text x="894" y="298" text-anchor="middle" fill="#1E7058" font-family="'Segoe UI', 'Arial', sans-serif" font-size="18" font-weight="700">2026</text>
+
+  <rect x="502" y="454" width="484" height="186" rx="28" fill="#F7FAFF"/>
+  <path d="M556 590C610 560 656 524 704 486C748 452 794 402 840 346C866 314 906 290 948 272" stroke="#6EA8FF" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="556" cy="590" r="16" fill="#8FB3FF"/>
+  <circle cx="704" cy="486" r="16" fill="#7CC0F2"/>
+  <circle cx="840" cy="346" r="16" fill="#5CD0B7"/>
+  <circle cx="948" cy="272" r="16" fill="#34D399"/>
+  <rect x="602" y="512" width="132" height="14" rx="7" fill="#C9D8F3"/>
+  <rect x="602" y="542" width="104" height="14" rx="7" fill="#DDE7F6"/>
+  <rect x="756" y="428" width="122" height="14" rx="7" fill="#C9D8F3"/>
+  <rect x="756" y="458" width="96" height="14" rx="7" fill="#DDE7F6"/>
+
+  <rect x="1142" y="226" width="212" height="24" rx="12" fill="#A8C5FF"/>
+  <rect x="1142" y="268" width="248" height="14" rx="7" fill="#B6C5DF"/>
+  <rect x="1142" y="302" width="194" height="14" rx="7" fill="#B6C5DF"/>
+
+  <rect x="1142" y="382" width="306" height="168" rx="28" fill="#132742"/>
+  <rect x="1180" y="420" width="228" height="96" rx="22" fill="url(#chart)"/>
+  <path d="M1222 492L1264 452L1314 476L1362 430" stroke="#E7F5FF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1222" cy="492" r="10" fill="#FFFFFF"/>
+  <circle cx="1264" cy="452" r="10" fill="#FFFFFF"/>
+  <circle cx="1314" cy="476" r="10" fill="#FFFFFF"/>
+  <circle cx="1362" cy="430" r="10" fill="#FFFFFF"/>
+  <rect x="1200" y="534" width="94" height="14" rx="7" fill="#9AC0FF"/>
+  <rect x="1308" y="534" width="74" height="14" rx="7" fill="#B8F0CF"/>
+
+  <rect x="1142" y="588" width="306" height="44" rx="22" fill="#263A5A"/>
+  <rect x="1170" y="601" width="120" height="18" rx="9" fill="#D8E4F7"/>
+  <rect x="1306" y="601" width="104" height="18" rx="9" fill="#9EC4FF"/>
+
+  <text x="132" y="716" fill="#0F172A" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="48" font-weight="700">
+    2026 网站 SEO 优化终极指南
+  </text>
+  <text x="132" y="772" fill="#334155" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="500">
+    Google 排名 · 免费流量 · 站内外优化 · 新手避坑
+  </text>
+</svg>
