@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SEO003 Cover</title>
+  <desc id="desc">2026 年个人博客 SEO 写作指南文章封面</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f1e6"/>
+      <stop offset="45%" stop-color="#e4e9f3"/>
+      <stop offset="100%" stop-color="#d9efe4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2631"/>
+      <stop offset="100%" stop-color="#31425a"/>
+    </linearGradient>
+    <linearGradient id="trend" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ab4ff"/>
+      <stop offset="100%" stop-color="#75dfb5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1038" cy="118" r="138" fill="#ffffff" fill-opacity="0.26"/>
+  <circle cx="176" cy="520" r="156" fill="#9fb58d" fill-opacity="0.12"/>
+  <rect x="78" y="76" width="1044" height="478" rx="34" fill="url(#panel)"/>
+  <rect x="128" y="130" width="354" height="34" rx="17" fill="#e9e2cf" fill-opacity="0.95"/>
+  <rect x="128" y="188" width="526" height="22" rx="11" fill="#d7d4c5" fill-opacity="0.88"/>
+  <rect x="128" y="228" width="448" height="22" rx="11" fill="#d7d4c5" fill-opacity="0.7"/>
+  <rect x="128" y="304" width="286" height="170" rx="24" fill="#f1ecdf"/>
+  <rect x="448" y="304" width="286" height="170" rx="24" fill="#f1ecdf" fill-opacity="0.86"/>
+  <rect x="768" y="304" width="286" height="170" rx="24" fill="#21334b"/>
+  <g fill="#1f2631">
+    <rect x="162" y="334" width="92" height="12" rx="6"/>
+    <rect x="162" y="358" width="128" height="10" rx="5"/>
+    <rect x="162" y="380" width="106" height="10" rx="5"/>
+    <rect x="482" y="334" width="92" height="12" rx="6"/>
+    <rect x="482" y="358" width="130" height="10" rx="5"/>
+    <rect x="482" y="380" width="112" height="10" rx="5"/>
+  </g>
+  <path d="M804 424C838 402 870 374 904 338C936 306 972 274 1018 244" stroke="url(#trend)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="804" cy="424" r="13" fill="#8ab4ff"/>
+  <circle cx="904" cy="338" r="13" fill="#80c9e9"/>
+  <circle cx="1018" cy="244" r="13" fill="#75dfb5"/>
+  <rect x="834" y="360" width="112" height="10" rx="5" fill="#dce8fb"/>
+  <rect x="834" y="382" width="88" height="10" rx="5" fill="#bfd7f4"/>
+  <text x="768" y="160" fill="#fff7e8" font-size="72" font-family="Georgia, 'Times New Roman', serif" font-weight="700">SEO</text>
+  <text x="768" y="214" fill="#dbe5f1" font-size="30" font-family="'Segoe UI', Arial, sans-serif">Writing Guide 2026</text>
+  <rect x="78" y="570" width="1044" height="30" rx="15" fill="#ffffff" fill-opacity="0.72"/>
+</svg>
