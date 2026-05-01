@@ -29,6 +29,18 @@ export default defineConfig({
 	site: "https://upsubs.com",
 	base: "/",
 	trailingSlash: "always",
+	redirects: {
+		"/posts/inspiration/SEO001/": "/posts/seo_guide/seo-guide-001/",
+		"/posts/inspiration/SEO002/": "/posts/seo_guide/seo-guide-002/",
+		"/posts/inspiration/seo-guide-2026/": "/posts/seo_guide/seo-guide-003/",
+		"/posts/inspiration/SEO003/": "/posts/seo_guide/seo-guide-004/",
+		"/posts/inspiration/SEO004/": "/posts/seo_guide/seo-guide-nav-2026/",
+		"/posts/seo_guide/seo-guide_001/": "/posts/seo_guide/seo-guide-001/",
+		"/posts/seo_guide/seo-guide_002/": "/posts/seo_guide/seo-guide-002/",
+		"/posts/seo_guide/seo-guide_003/": "/posts/seo_guide/seo-guide-003/",
+		"/posts/seo_guide/seo-guide_004/": "/posts/seo_guide/seo-guide-004/",
+		"/posts/seo_guide/seo-guide_nav_2026/": "/posts/seo_guide/seo-guide-nav-2026/",
+	},
 	integrations: [
 		tailwind({
 			nesting: true,

@@ -1,6 +1,6 @@
 ---
 title: Astro 新手搭博客前，最好先想清楚这 7 个问题
-published: 2026-04-28
+published: 2026-04-25
 description: 'Astro 很适合做个人博客，但真正开工前，有些问题最好先想清楚。本文从写作方式、主题改造、部署、SEO、评论、搜索和长期维护几个方面，整理 7 个新手最容易忽略的问题。'
 image: './astro004-cover.svg'
 tags: [Astro, Blog, 新手, 建站]

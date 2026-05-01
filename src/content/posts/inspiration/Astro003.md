@@ -1,6 +1,6 @@
 ---
 title: Astro 做博客对 SEO 友好吗？适合长期做内容站吗
-published: 2026-04-27
+published: 2026-04-24
 description: 'Astro 常被认为很适合做个人博客和内容站，但它对 SEO 到底友不友好？本文从页面结构、性能、内容组织、技术实现和长期维护几个方面，分析 Astro 在 SEO 上的真实优势与边界。'
 image: './astro003-cover.svg'
 tags: [Astro, SEO, Blog, 建站]

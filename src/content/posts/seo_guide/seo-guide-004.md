@@ -1,9 +1,9 @@
 ---
 title: 2026年个人博客SEO写作指南：如何让文章更容易被Google收录和排名
-published: 2026-05-01
-description: '写了很多博客文章，却始终没有搜索流量？这篇文章从选题、标题、关键词布局、内容结构、内链和发布节奏几个方面，讲清楚 2026 年个人博客 SEO 写作该怎么做。'
-image: './seo003-cover.svg'
-tags: [SEO, 个人博客, 内容写作, Google排名, 流量增长]
+published: 2026-04-29
+description: '这篇个人博客 SEO 写作指南从选题、标题、搜索意图、关键词布局、内容结构、内链和发布节奏几个方面，讲清楚文章该怎么写得更利于收录和排名。'
+image: './seo-guide-004-cover.svg'
+tags: [SEO, SEO专题, 个人博客, 内容写作, Google排名, 流量增长]
 category: 'SEO教程'
 draft: false
 lang: 'zh_CN'
@@ -268,9 +268,10 @@ Google 更容易信任持续活跃、方向稳定的网站。
 
 ## 延伸阅读
 
-- 如果你还没把博客 SEO 的基础结构搭起来，可以先看 [个人博客 SEO 从哪里开始？先把这 8 个基础项做好](/posts/inspiration/SEO001/)
-- 如果你准备回头优化首页标题、描述和站点定位，可以接着看 [个人博客首页 SEO 文案怎么写？别一上来就写成自我介绍](/posts/inspiration/SEO002/)
-- 如果你想补一份更通用的网站 SEO 入门框架，可以再看 [2026年网站SEO优化终极指南：如何快速提升Google排名获取免费流量](/posts/inspiration/seo-guide-2026/)
+- 如果你想先看这一组内容的总览，可以先从 [个人博客 SEO 专题导航：从基础项到写作优化，该先做什么](/posts/seo_guide/seo-guide-nav-2026/) 开始
+- 如果你还没把博客 SEO 的基础结构搭起来，可以先看 [个人博客 SEO 从哪里开始？先把这 8 个基础项做好](/posts/seo_guide/seo-guide-001/)
+- 如果你准备回头优化首页标题、描述和站点定位，可以接着看 [个人博客首页 SEO 文案怎么写？别一上来就写成自我介绍](/posts/seo_guide/seo-guide-002/)
+- 如果你想补一份更通用的网站 SEO 入门框架，可以再看 [2026年网站SEO优化终极指南：如何快速提升Google排名获取免费流量](/posts/seo_guide/seo-guide-003/)
 
 ---
 

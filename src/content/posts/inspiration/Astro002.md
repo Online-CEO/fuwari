@@ -1,6 +1,6 @@
 ---
 title: Astro 适合做个人博客吗？优缺点与适用场景分析
-published: 2026-04-22
+published: 2026-04-23
 description: 'Astro 适合做个人博客吗？本文从性能、SEO、内容管理、部署和长期维护几个方面，分析 Astro 搭建博客的优势、缺点与适用场景。'
 image: './astro002-cover.svg'
 tags: [Astro, Blog, SEO, 前端]
