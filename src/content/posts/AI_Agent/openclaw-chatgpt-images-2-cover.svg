@@ -1,0 +1,51 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="86" y1="42" x2="1138" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081826"/>
+      <stop offset="0.55" stop-color="#0C2D46"/>
+      <stop offset="1" stop-color="#082033"/>
+    </linearGradient>
+    <linearGradient id="card" x1="177" y1="118" x2="1007" y2="521" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F3C59" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0B2438" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="211" y1="152" x2="903" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4EE7E0"/>
+      <stop offset="1" stop-color="#58A6FF"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.28">
+    <circle cx="183" cy="116" r="88" fill="#49E6DE"/>
+    <circle cx="1024" cy="124" r="96" fill="#61A4FF"/>
+    <circle cx="930" cy="512" r="104" fill="#FF8D5C"/>
+  </g>
+
+  <rect x="118" y="94" width="964" height="442" rx="28" fill="url(#card)" stroke="white" stroke-opacity="0.12"/>
+
+  <rect x="166" y="154" width="330" height="230" rx="24" fill="#0A1A28" stroke="white" stroke-opacity="0.12"/>
+  <rect x="196" y="184" width="270" height="170" rx="18" fill="#10283D"/>
+  <rect x="214" y="202" width="234" height="12" rx="6" fill="#1E4967"/>
+  <rect x="214" y="228" width="184" height="12" rx="6" fill="#1A3D58"/>
+  <rect x="214" y="254" width="212" height="12" rx="6" fill="#1A3D58"/>
+  <rect x="214" y="289" width="94" height="44" rx="14" fill="url(#accent)"/>
+  <path d="M293 243C293 210.968 319.968 184 352 184C384.032 184 411 210.968 411 243C411 275.032 384.032 302 352 302C319.968 302 293 275.032 293 243Z" fill="#FF8E61"/>
+  <path d="M326 234C326 220.193 337.193 209 351 209C364.807 209 376 220.193 376 234C376 247.807 364.807 259 351 259C337.193 259 326 247.807 326 234Z" fill="#FFD4C3"/>
+  <path d="M304 318C321 292 382 292 399 318" stroke="#FF8E61" stroke-width="14" stroke-linecap="round"/>
+  <path d="M298 205L280 185" stroke="#FF8E61" stroke-width="8" stroke-linecap="round"/>
+  <path d="M404 205L422 185" stroke="#FF8E61" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M540 182H964" stroke="white" stroke-opacity="0.14" stroke-width="2"/>
+  <text x="540" y="228" fill="#CDEBFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">OPENCLAW X CHATGPT IMAGES 2.0</text>
+  <text x="540" y="292" fill="white" font-size="58" font-weight="700" font-family="Segoe UI, Arial, sans-serif">无需 API Key</text>
+  <text x="540" y="352" fill="white" font-size="58" font-weight="700" font-family="Segoe UI, Arial, sans-serif">不走按量 Token</text>
+  <text x="540" y="414" fill="#8FD8FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">OpenAI Codex OAuth + openai/gpt-image-2</text>
+
+  <rect x="540" y="447" width="238" height="50" rx="25" fill="url(#accent)"/>
+  <text x="589" y="480" fill="#082033" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">BLOG TUTORIAL</text>
+</svg>
