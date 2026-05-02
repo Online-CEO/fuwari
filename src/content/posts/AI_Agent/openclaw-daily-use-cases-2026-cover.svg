@@ -1,0 +1,49 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="132" y1="44" x2="1071" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1C28"/>
+      <stop offset="0.52" stop-color="#12344B"/>
+      <stop offset="1" stop-color="#0D2536"/>
+    </linearGradient>
+    <linearGradient id="card" x1="128" y1="106" x2="1080" y2="534" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102C40" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#0A1E2D" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="164" x2="434" y2="434" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4CE4D6"/>
+      <stop offset="1" stop-color="#58A6FF"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.28">
+    <circle cx="207" cy="118" r="95" fill="#49E6DE"/>
+    <circle cx="1010" cy="150" r="90" fill="#5BA7FF"/>
+    <circle cx="916" cy="510" r="118" fill="#FF9364"/>
+  </g>
+
+  <rect x="96" y="86" width="1008" height="458" rx="30" fill="url(#card)" stroke="white" stroke-opacity="0.1"/>
+
+  <rect x="152" y="146" width="328" height="328" rx="26" fill="#0B1B28" stroke="white" stroke-opacity="0.08"/>
+  <circle cx="316" cy="262" r="96" fill="url(#accent)"/>
+  <circle cx="316" cy="250" r="47" fill="#FFD5C4"/>
+  <path d="M264 346C286 311 346 311 368 346" stroke="#FF8E61" stroke-width="16" stroke-linecap="round"/>
+  <path d="M259 213L231 184" stroke="#FF8E61" stroke-width="10" stroke-linecap="round"/>
+  <path d="M373 213L401 184" stroke="#FF8E61" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="295" cy="243" r="6" fill="#153244"/>
+  <circle cx="337" cy="243" r="6" fill="#153244"/>
+  <rect x="214" y="389" width="204" height="22" rx="11" fill="#17344A"/>
+  <rect x="214" y="421" width="138" height="18" rx="9" fill="#133146"/>
+
+  <text x="542" y="195" fill="#8EDBFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">OPENCLAW DAILY USE</text>
+  <text x="542" y="267" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">真正有用的</text>
+  <text x="542" y="330" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">是这 6 类重复劳动</text>
+  <text x="542" y="392" fill="#CFE9FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">浏览器、记忆、提醒、资料整理、配图、账号隔离</text>
+
+  <rect x="542" y="434" width="254" height="52" rx="26" fill="#FF9364"/>
+  <text x="591" y="468" fill="#0D2536" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">AI AGENT INSIGHT</text>
+</svg>
