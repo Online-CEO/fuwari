@@ -1,5 +1,5 @@
 ---
-title: 我做了一个免费的键盘指法练习网页：支持字母、数字和 F 键分区训练
+title: Windows键盘指法练习网页：支持字母、数字和 F 键分区训练
 published: 2026-05-03
 description: '这是一个我自己做的网页键盘指法练习工具，不用安装，打开浏览器就能练。支持字母区、数字区和 F1-F12 功能键自由组合，还会显示当前目标按键、对应手指、准确率、速度和连击。'
 image: './keyboard-finger-practice-cover.svg'

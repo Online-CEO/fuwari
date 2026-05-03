@@ -54,7 +54,7 @@
   <path d="M333 270L337 274L345 265" stroke="#163346" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 
   <text x="584" y="210" fill="#9DCAFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">KEYBOARD PRACTICE TOOL</text>
-  <text x="584" y="285" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">免费的键盘指法练习网页</text>
+  <text x="584" y="285" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">键盘指法练习网页</text>
   <text x="584" y="348" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">打开浏览器就能练</text>
   <text x="584" y="410" fill="#D7E8FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">字母区 / 数字区 / F 键区自由组合</text>
 
