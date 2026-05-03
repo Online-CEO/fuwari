@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="118" y1="42" x2="1114" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11161C"/>
+      <stop offset="0.52" stop-color="#1A2736"/>
+      <stop offset="1" stop-color="#121E2A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="91" y1="88" x2="1106" y2="541" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A222B" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#141B23" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="153" y1="160" x2="490" y2="437" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79A8FF"/>
+      <stop offset="1" stop-color="#5BE3C5"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.22">
+    <circle cx="184" cy="112" r="96" fill="#6FA3FF"/>
+    <circle cx="1020" cy="138" r="92" fill="#5DE2C5"/>
+    <circle cx="910" cy="502" r="118" fill="#F9A34E"/>
+  </g>
+
+  <rect x="84" y="86" width="1032" height="460" rx="30" fill="url(#panel)" stroke="white" stroke-opacity="0.08"/>
+
+  <rect x="138" y="145" width="398" height="318" rx="26" fill="#0F141A" stroke="white" stroke-opacity="0.08"/>
+  <rect x="172" y="182" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="233" y="182" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="294" y="182" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="355" y="182" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="416" y="182" width="86" height="52" rx="10" fill="#2E3742"/>
+
+  <rect x="172" y="244" width="70" height="52" rx="10" fill="#2E3742"/>
+  <rect x="251" y="244" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="312" y="244" width="52" height="52" rx="10" fill="url(#accent)"/>
+  <rect x="373" y="244" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="434" y="244" width="68" height="52" rx="10" fill="#2E3742"/>
+
+  <rect x="172" y="306" width="88" height="52" rx="10" fill="#2E3742"/>
+  <rect x="269" y="306" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="330" y="306" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="391" y="306" width="52" height="52" rx="10" fill="#2E3742"/>
+  <rect x="452" y="306" width="50" height="52" rx="10" fill="#2E3742"/>
+
+  <rect x="172" y="368" width="112" height="52" rx="10" fill="#2E3742"/>
+  <rect x="293" y="368" width="168" height="52" rx="10" fill="#2E3742"/>
+
+  <circle cx="338" cy="270" r="19" fill="#ECFEFF"/>
+  <path d="M333 270L337 274L345 265" stroke="#163346" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="584" y="210" fill="#9DCAFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">KEYBOARD PRACTICE TOOL</text>
+  <text x="584" y="285" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">免费的键盘指法练习网页</text>
+  <text x="584" y="348" fill="white" font-size="56" font-weight="700" font-family="Segoe UI, Arial, sans-serif">打开浏览器就能练</text>
+  <text x="584" y="410" fill="#D7E8FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">字母区 / 数字区 / F 键区自由组合</text>
+
+  <rect x="584" y="442" width="286" height="54" rx="27" fill="url(#accent)"/>
+  <text x="648" y="477" fill="#14212D" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">精品软件 TOOL PAGE</text>
+</svg>

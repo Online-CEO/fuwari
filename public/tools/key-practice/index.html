@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0, minimum-scale=0.5">
+  <title>键盘指法练习 · 全键盘布局 · 多选</title>
+  <style>
+    :root {
+      --bg: #1a1d23;
+      --surface: #252830;
+      --surface-light: #2d3038;
+      --text: #e0e0e0;
+      --text-secondary: #a0a4b0;
+      --accent: #6c8cff;
+      --correct: #4ade80;
+      --error: #f87171;
+      --pinky-left: #ff6b9d;
+      --ring-left: #a78bfa;
+      --middle-left: #60a5fa;
+      --index-left: #34d399;
+      --index-right: #4ade80;
+      --middle-right: #fbbf24;
+      --ring-right: #f97316;
+      --pinky-right: #ef4444;
+      --key-bg: #3a3d45;
+      --key-bg-inactive: #2a2c33;
+      --key-border: #4a4d55;
+      --key-border-inactive: #3a3c42;
+      --key-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+      --key-hover: #4e515a;
+      --glow-correct: 0 0 20px rgba(74, 222, 128, 0.7);
+      --glow-error: 0 0 20px rgba(248, 113, 113, 0.7);
+      --glow-target: 0 0 25px rgba(108, 140, 255, 0.8);
+      --radius-key: 6px;
+      --radius-panel: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      -webkit-user-select: none;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 1300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #c4d0ff, #8aa4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+
+    .multi-select {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      background: var(--surface);
+      padding: 14px 24px;
+      border-radius: 40px;
+      border: 1px solid #33363e;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 6px 16px;
+      border-radius: 24px;
+      transition: all 0.2s;
+      color: var(--text-secondary);
+    }
+
+    .checkbox-label:hover {
+      background: rgba(255, 255, 255, 0.04);
+      color: #fff;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .checkbox-label.checked {
+      color: #fff;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+
+    .target-display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      min-height: 130px;
+      justify-content: center;
+    }
+
+    .target-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .target-key {
+      font-size: 5rem;
+      font-weight: 800;
+      transition: all 0.1s;
+      line-height: 1;
+      text-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    }
+
+    .target-key.correct-flash {
+      animation: flash-correct 0.35s ease-out;
+    }
+
+    .target-key.error-flash {
+      animation: flash-error 0.35s ease-out;
+    }
+
+    @keyframes flash-correct {
+      0% {
+        transform: scale(1.4);
+        text-shadow: 0 0 50px var(--correct);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes flash-error {
+      0% {
+        transform: translateX(-8px);
+        text-shadow: 0 0 40px var(--error);
+      }
+
+      25% {
+        transform: translateX(8px);
+      }
+
+      50% {
+        transform: translateX(-5px);
+      }
+
+      75% {
+        transform: translateX(5px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .finger-hint {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      background: var(--surface);
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--key-border);
+    }
+
+    .finger-name {
+      font-weight: 700;
+    }
+
+    .combo-display {
+      font-weight: 700;
+      min-height: 28px;
+    }
+
+    .combo-display.hot {
+      color: #fbbf24;
+      animation: combo-glow 0.6s infinite alternate;
+    }
+
+    .combo-display.fire {
+      color: #f97316;
+      animation: combo-glow 0.35s infinite alternate;
+    }
+
+    .combo-display.god {
+      color: #ef4444;
+      font-size: 1.3rem;
+      animation: combo-glow 0.2s infinite alternate;
+    }
+
+    @keyframes combo-glow {
+      from {
+        text-shadow: 0 0 10px currentColor;
+      }
+
+      to {
+        text-shadow: 0 0 30px currentColor, 0 0 50px currentColor;
+      }
+    }
+
+    .keyboard-wrapper {
+      background: var(--surface);
+      border-radius: var(--radius-panel);
+      padding: 16px 14px 14px 14px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid #33363e;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+      min-width: fit-content;
+    }
+
+    .key-row {
+      display: flex;
+      gap: 5px;
+      align-items: stretch;
+    }
+
+    .gap-after {
+      margin-right: 18px;
+    }
+
+    .key {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--key-bg);
+      border: 1px solid var(--key-border);
+      border-radius: var(--radius-key);
+      cursor: pointer;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.1s;
+      box-shadow: var(--key-shadow);
+      flex-shrink: 0;
+      position: relative;
+      color: var(--text);
+    }
+
+    .key.inactive {
+      background: var(--key-bg-inactive);
+      border-color: var(--key-border-inactive);
+      opacity: 0.7;
+      cursor: default;
+    }
+
+    .key.inactive:hover {
+      background: var(--key-bg-inactive);
+      transform: none;
+      box-shadow: var(--key-shadow);
+      border-color: var(--key-border-inactive);
+    }
+
+    .key:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .key.mod-key {
+      font-size: 0.7rem;
+      font-weight: 600;
+      justify-content: center;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .key.unit1 {
+      width: 46px;
+      height: 46px;
+      font-size: 0.75rem;
+    }
+
+    .key.unit1_5 {
+      width: 72px;
+      height: 46px;
+      font-size: 0.7rem;
+    }
+
+    .key.unit1_75 {
+      width: 82px;
+      height: 46px;
+      font-size: 0.7rem;
+    }
+
+    .key.unit2 {
+      width: 90px;
+      height: 46px;
+      font-size: 0.7rem;
+    }
+
+    .key.unit2_25 {
+      width: 105px;
+      height: 46px;
+      font-size: 0.7rem;
+    }
+
+    .key.unit2_75 {
+      width: 126px;
+      height: 46px;
+      font-size: 0.7rem;
+    }
+
+    .key.space {
+      width: 320px;
+      height: 46px;
+    }
+
+    .key.active.finger-pinky-left {
+      border-left: 3px solid var(--pinky-left);
+    }
+
+    .key.active.finger-ring-left {
+      border-left: 3px solid var(--ring-left);
+    }
+
+    .key.active.finger-middle-left {
+      border-left: 3px solid var(--middle-left);
+    }
+
+    .key.active.finger-index-left {
+      border-left: 3px solid var(--index-left);
+    }
+
+    .key.active.finger-index-right {
+      border-left: 3px solid var(--index-right);
+    }
+
+    .key.active.finger-middle-right {
+      border-left: 3px solid var(--middle-right);
+    }
+
+    .key.active.finger-ring-right {
+      border-left: 3px solid var(--ring-right);
+    }
+
+    .key.active.finger-pinky-right {
+      border-left: 3px solid var(--pinky-right);
+    }
+
+    .key.target-highlight {
+      animation: target-glow 0.7s infinite alternate;
+      border-color: #fff !important;
+      box-shadow: var(--glow-target) !important;
+      transform: translateY(-4px) !important;
+      z-index: 2;
+    }
+
+    @keyframes target-glow {
+      from {
+        box-shadow: 0 0 16px rgba(108, 140, 255, 0.5);
+      }
+
+      to {
+        box-shadow: 0 0 28px rgba(108, 140, 255, 0.9);
+      }
+    }
+
+    .key.correct-press {
+      background: #1a3d2a !important;
+      border-color: var(--correct) !important;
+      box-shadow: var(--glow-correct) !important;
+    }
+
+    .key.error-press {
+      background: #3d1a1a !important;
+      border-color: var(--error) !important;
+      box-shadow: var(--glow-error) !important;
+      animation: shake 0.35s ease;
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-4px);
+      }
+
+      40% {
+        transform: translateX(4px);
+      }
+
+      60% {
+        transform: translateX(-3px);
+      }
+
+      80% {
+        transform: translateX(3px);
+      }
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      justify-content: center;
+      padding: 8px 0;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+
+    .stats-panel {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      background: var(--surface);
+      border-radius: var(--radius-panel);
+      padding: 16px 24px;
+      border: 1px solid #33363e;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      min-width: 70px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+
+    .reset-btn {
+      padding: 9px 22px;
+      border-radius: 22px;
+      border: 1px solid #555;
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      transition: all 0.2s;
+    }
+
+    .reset-btn:hover {
+      border-color: #999;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    @media (max-width: 1000px) {
+      .key.unit1 {
+        width: 36px;
+        height: 38px;
+        font-size: 0.65rem;
+      }
+
+      .key.unit1_5 {
+        width: 58px;
+        height: 38px;
+      }
+
+      .key.unit1_75 {
+        width: 66px;
+        height: 38px;
+      }
+
+      .key.unit2 {
+        width: 72px;
+        height: 38px;
+      }
+
+      .key.unit2_25 {
+        width: 84px;
+        height: 38px;
+      }
+
+      .key.unit2_75 {
+        width: 100px;
+        height: 38px;
+      }
+
+      .key.space {
+        width: 240px;
+        height: 38px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .key.unit1 {
+        width: 28px;
+        height: 30px;
+        font-size: 0.5rem;
+        border-radius: 4px;
+      }
+
+      .key.unit1_5 {
+        width: 40px;
+        height: 30px;
+      }
+
+      .key.unit1_75 {
+        width: 48px;
+        height: 30px;
+      }
+
+      .key.unit2 {
+        width: 52px;
+        height: 30px;
+      }
+
+      .key.unit2_25 {
+        width: 60px;
+        height: 30px;
+      }
+
+      .key.unit2_75 {
+        width: 72px;
+        height: 30px;
+      }
+
+      .key.space {
+        width: 160px;
+        height: 30px;
+      }
+
+      .target-key {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="header">
+      <h1>⌨️ 键盘指法练习</h1>
+      <p class="subtitle">全键盘布局 · 数字/F键/字母自由组合</p>
+    </div>
+
+    <div class="multi-select" id="multiSelect">
+      <label class="checkbox-label checked" id="labelDigits"><input type="checkbox" id="checkDigits" checked> 🔢
+        数字/符号键</label>
+      <label class="checkbox-label" id="labelFKeys"><input type="checkbox" id="checkFKeys"> F1 - F12</label>
+      <label class="checkbox-label checked" id="labelLetters"><input type="checkbox" id="checkLetters" checked> 🔤 字母键
+        A-Z</label>
+    </div>
+
+    <div class="target-display">
+      <span class="target-label">🎯 请按下</span>
+      <div class="target-key" id="targetKeyDisplay">A</div>
+      <div class="finger-hint">使用 <span class="finger-name" id="fingerName">左手小指</span></div>
+      <div class="combo-display" id="comboDisplay"></div>
+    </div>
+
+    <div class="keyboard-wrapper">
+      <div class="keyboard" id="keyboard"></div>
+    </div>
+
+    <div class="legend" id="legend"></div>
+
+    <div class="stats-panel">
+      <div class="stat-item"><span class="stat-value" style="color:#4ade80" id="statCorrect">0</span><span
+          class="stat-label">✅ 正确</span></div>
+      <div class="stat-item"><span class="stat-value" style="color:#f87171" id="statErrors">0</span><span
+          class="stat-label">❌ 错误</span></div>
+      <div class="stat-item"><span class="stat-value" style="color:#6c8cff" id="statAccuracy">100%</span><span
+          class="stat-label">📊 准确率</span></div>
+      <div class="stat-item"><span class="stat-value" style="color:#fbbf24" id="statMaxCombo">0</span><span
+          class="stat-label">🔥 最高连击</span></div>
+      <div class="stat-item"><span class="stat-value" style="color:#c0c8e0" id="statSpeed">0</span><span
+          class="stat-label">⚡ 键/分钟</span></div>
+    </div>
+
+    <button class="reset-btn" id="resetBtn">🔄 重新开始</button>
+  </div>
+
+  <script>
+    (function () {
+      const fingerColors = {
+        'pinky-left': '#ff6b9d', 'ring-left': '#a78bfa', 'middle-left': '#60a5fa',
+        'index-left': '#34d399', 'index-right': '#4ade80', 'middle-right': '#fbbf24',
+        'ring-right': '#f97316', 'pinky-right': '#ef4444'
+      };
+      const fingerNamesCN = {
+        'pinky-left': '左手小指', 'ring-left': '左手无名指', 'middle-left': '左手中指',
+        'index-left': '左手食指', 'index-right': '右手食指', 'middle-right': '右手中指',
+        'ring-right': '右手无名指', 'pinky-right': '右手小指'
+      };
+
+      const allKeyDefs = [
+        // 功能键行
+        { code: 'Escape', display: 'Esc', finger: null, row: 'func', size: 'unit1', gapAfter: true },
+        { code: 'F1', display: 'F1', finger: 'pinky-left', row: 'func', size: 'unit1', active: true },
+        { code: 'F2', display: 'F2', finger: 'ring-left', row: 'func', size: 'unit1', active: true },
+        { code: 'F3', display: 'F3', finger: 'middle-left', row: 'func', size: 'unit1', active: true },
+        { code: 'F4', display: 'F4', finger: 'index-left', row: 'func', size: 'unit1', active: true, gapAfter: true },
+        { code: 'F5', display: 'F5', finger: 'index-left', row: 'func', size: 'unit1', active: true },
+        { code: 'F6', display: 'F6', finger: 'index-right', row: 'func', size: 'unit1', active: true },
+        { code: 'F7', display: 'F7', finger: 'middle-right', row: 'func', size: 'unit1', active: true },
+        { code: 'F8', display: 'F8', finger: 'ring-right', row: 'func', size: 'unit1', active: true, gapAfter: true },
+        { code: 'F9', display: 'F9', finger: 'pinky-right', row: 'func', size: 'unit1', active: true },
+        { code: 'F10', display: 'F10', finger: 'pinky-right', row: 'func', size: 'unit1', active: true },
+        { code: 'F11', display: 'F11', finger: 'pinky-right', row: 'func', size: 'unit1', active: true },
+        { code: 'F12', display: 'F12', finger: 'pinky-right', row: 'func', size: 'unit1', active: true },
+
+        // 数字行
+        { code: 'Backquote', display: '`', shift: '~', finger: 'pinky-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit1', display: '1', shift: '!', finger: 'pinky-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit2', display: '2', shift: '@', finger: 'ring-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit3', display: '3', shift: '#', finger: 'middle-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit4', display: '4', shift: '$', finger: 'index-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit5', display: '5', shift: '%', finger: 'index-left', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit6', display: '6', shift: '^', finger: 'index-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit7', display: '7', shift: '&', finger: 'index-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit8', display: '8', shift: '*', finger: 'middle-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit9', display: '9', shift: '(', finger: 'ring-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Digit0', display: '0', shift: ')', finger: 'pinky-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Minus', display: '-', shift: '_', finger: 'pinky-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Equal', display: '=', shift: '+', finger: 'pinky-right', row: 'digits', size: 'unit1', active: true },
+        { code: 'Backspace', display: '⌫', finger: 'pinky-right', row: 'digits', size: 'unit2', active: true },
+
+        // QWERTY行
+        { code: 'Tab', display: 'Tab', finger: null, row: 'letter1', size: 'unit1_5' },
+        { code: 'KeyQ', display: 'Q', finger: 'pinky-left', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyW', display: 'W', finger: 'ring-left', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyE', display: 'E', finger: 'middle-left', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyR', display: 'R', finger: 'index-left', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyT', display: 'T', finger: 'index-left', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyY', display: 'Y', finger: 'index-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyU', display: 'U', finger: 'index-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyI', display: 'I', finger: 'middle-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyO', display: 'O', finger: 'ring-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'KeyP', display: 'P', finger: 'pinky-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'BracketLeft', display: '[', shift: '{', finger: 'pinky-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'BracketRight', display: ']', shift: '}', finger: 'pinky-right', row: 'letter1', size: 'unit1', active: true },
+        { code: 'Backslash', display: '\\', shift: '|', finger: 'pinky-right', row: 'letter1', size: 'unit1_5', active: true },
+
+        // ASDF行
+        { code: 'CapsLock', display: 'Caps', finger: null, row: 'letter2', size: 'unit1_75' },
+        { code: 'KeyA', display: 'A', finger: 'pinky-left', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyS', display: 'S', finger: 'ring-left', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyD', display: 'D', finger: 'middle-left', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyF', display: 'F', finger: 'index-left', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyG', display: 'G', finger: 'index-left', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyH', display: 'H', finger: 'index-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyJ', display: 'J', finger: 'index-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyK', display: 'K', finger: 'middle-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'KeyL', display: 'L', finger: 'ring-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'Semicolon', display: ';', shift: ':', finger: 'pinky-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'Quote', display: "'", shift: '"', finger: 'pinky-right', row: 'letter2', size: 'unit1', active: true },
+        { code: 'Enter', display: 'Enter', finger: null, row: 'letter2', size: 'unit2_25' },
+
+        // ZXCV行
+        { code: 'ShiftLeft', display: 'Shift', finger: null, row: 'letter3', size: 'unit2_25' },
+        { code: 'KeyZ', display: 'Z', finger: 'pinky-left', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyX', display: 'X', finger: 'ring-left', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyC', display: 'C', finger: 'middle-left', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyV', display: 'V', finger: 'index-left', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyB', display: 'B', finger: 'index-left', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyN', display: 'N', finger: 'index-right', row: 'letter3', size: 'unit1', active: true },
+        { code: 'KeyM', display: 'M', finger: 'index-right', row: 'letter3', size: 'unit1', active: true },
+        { code: 'Comma', display: ',', shift: '<', finger: 'middle-right', row: 'letter3', size: 'unit1', active: true },
+        { code: 'Period', display: '.', shift: '>', finger: 'ring-right', row: 'letter3', size: 'unit1', active: true },
+        { code: 'Slash', display: '/', shift: '?', finger: 'pinky-right', row: 'letter3', size: 'unit1', active: true },
+        { code: 'ShiftRight', display: 'Shift', finger: null, row: 'letter3', size: 'unit2_75' },
+
+        // 底部修饰键行 (已移除 Menu 键)
+        { code: 'ControlLeft', display: 'Ctrl', finger: null, row: 'bottom', size: 'unit1_5' },
+        { code: 'MetaLeft', display: 'Win', finger: null, row: 'bottom', size: 'unit1_25' },
+        { code: 'AltLeft', display: 'Alt', finger: null, row: 'bottom', size: 'unit1_5' },
+        { code: 'Space', display: '', finger: null, row: 'bottom', size: 'space' },
+        { code: 'AltRight', display: 'Alt', finger: null, row: 'bottom', size: 'unit1_5' },
+        { code: 'MetaRight', display: 'Fn', finger: null, row: 'bottom', size: 'unit1_25' },
+        { code: 'ControlRight', display: 'Ctrl', finger: null, row: 'bottom', size: 'unit1_5' }
+      ];
+
+      let availableKeys = [];
+      let currentTarget = null;
+      let stats = { correct: 0, errors: 0, maxCombo: 0, currentCombo: 0 };
+      let practiceStartTime = null;
+      let isCoolingDown = false;
+      let keyElementsMap = {};
+
+      const keyboardEl = document.getElementById('keyboard');
+      const targetDisplay = document.getElementById('targetKeyDisplay');
+      const fingerNameEl = document.getElementById('fingerName');
+      const comboDisplay = document.getElementById('comboDisplay');
+      const statCorrect = document.getElementById('statCorrect');
+      const statErrors = document.getElementById('statErrors');
+      const statAccuracy = document.getElementById('statAccuracy');
+      const statMaxCombo = document.getElementById('statMaxCombo');
+      const statSpeed = document.getElementById('statSpeed');
+      const checkDigits = document.getElementById('checkDigits');
+      const checkFKeys = document.getElementById('checkFKeys');
+      const checkLetters = document.getElementById('checkLetters');
+      const legendEl = document.getElementById('legend');
+
+      let audioCtx;
+      function getCtx() { if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); return audioCtx; }
+      function beep(f, d, t = 'sine', v = 0.12) { try { let ctx = getCtx(), o = ctx.createOscillator(), g = ctx.createGain(); o.type = t; o.frequency.setValueAtTime(f, ctx.currentTime); g.gain.setValueAtTime(v, ctx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + d); o.connect(g); g.connect(ctx.destination); o.start(); o.stop(ctx.currentTime + d); } catch (e) { } }
+      function playCorrect() { beep(880, 0.12); setTimeout(() => beep(1100, 0.1), 80); }
+      function playError() { beep(150, 0.2, 'triangle', 0.13); }
+      function playCombo() { beep(660, 0.08); setTimeout(() => beep(880, 0.08), 60); setTimeout(() => beep(1100, 0.1), 120); }
+
+      function buildKeyboard() {
+        keyboardEl.innerHTML = '';
+        keyElementsMap = {};
+        const rows = { func: [], digits: [], letter1: [], letter2: [], letter3: [], bottom: [] };
+        allKeyDefs.forEach(d => rows[d.row].push(d));
+
+        function createRow(rowDefs) {
+          const rowDiv = document.createElement('div');
+          rowDiv.className = 'key-row';
+          rowDefs.forEach(def => {
+            const el = createKeyElement(def);
+            rowDiv.appendChild(el);
+            if (def.gapAfter) el.classList.add('gap-after');
+            keyElementsMap[def.code] = el;
+          });
+          return rowDiv;
+        }
+
+        keyboardEl.appendChild(createRow(rows.func));
+        keyboardEl.appendChild(createRow(rows.digits));
+        keyboardEl.appendChild(createRow(rows.letter1));
+        keyboardEl.appendChild(createRow(rows.letter2));
+        keyboardEl.appendChild(createRow(rows.letter3));
+        keyboardEl.appendChild(createRow(rows.bottom));
+        buildLegend();
+      }
+
+      function createKeyElement(def) {
+        const el = document.createElement('div');
+        const isActive = def.active === true;
+        el.className = `key ${def.size} ${isActive ? 'active' : 'inactive'}`;
+        if (!isActive) el.classList.add('mod-key');
+        if (def.finger) el.classList.add(`finger-${def.finger}`);
+        el.dataset.code = def.code;
+        if (def.shift) {
+          const main = document.createElement('span'); main.style.fontWeight = '700'; main.textContent = def.display;
+          const shift = document.createElement('span'); shift.style.fontSize = '0.6rem'; shift.style.color = '#999'; shift.textContent = def.shift;
+          el.appendChild(main); el.appendChild(shift);
+        } else {
+          el.textContent = def.display;
+        }
+        el.addEventListener('click', () => handleKeyPress(def.code));
+        el.addEventListener('touchstart', (e) => { e.preventDefault(); handleKeyPress(def.code); }, { passive: false });
+        return el;
+      }
+
+      function buildLegend() {
+        legendEl.innerHTML = '';
+        const seen = new Set();
+        ['pinky-left', 'ring-left', 'middle-left', 'index-left', 'index-right', 'middle-right', 'ring-right', 'pinky-right'].forEach(fg => {
+          if (seen.has(fg)) return; seen.add(fg);
+          const item = document.createElement('div'); item.className = 'legend-item';
+          const dot = document.createElement('span'); dot.className = 'legend-dot'; dot.style.backgroundColor = fingerColors[fg];
+          const label = document.createElement('span'); label.textContent = fingerNamesCN[fg];
+          item.appendChild(dot); item.appendChild(label); legendEl.appendChild(item);
+        });
+      }
+
+      function updateAvailableKeys() {
+        const sets = [];
+        if (checkDigits.checked) sets.push('digits');
+        if (checkFKeys.checked) sets.push('fkeys');
+        if (checkLetters.checked) sets.push('letters');
+        if (sets.length === 0) { checkDigits.checked = true; sets.push('digits'); }
+        availableKeys = allKeyDefs.filter(d => {
+          if (!d.active) return false;
+          if (sets.includes('digits') && d.row === 'digits') return true;
+          if (sets.includes('fkeys') && d.row === 'func' && d.code.startsWith('F')) return true;
+          if (sets.includes('letters') && (d.row === 'letter1' || d.row === 'letter2' || d.row === 'letter3') && d.code.startsWith('Key')) return true;
+          return false;
+        });
+        document.querySelectorAll('.checkbox-label').forEach(l => l.classList.remove('checked'));
+        if (checkDigits.checked) document.getElementById('labelDigits').classList.add('checked');
+        if (checkFKeys.checked) document.getElementById('labelFKeys').classList.add('checked');
+        if (checkLetters.checked) document.getElementById('labelLetters').classList.add('checked');
+        if (currentTarget && !availableKeys.some(k => k.code === currentTarget.code)) pickNewTarget();
+        else if (!currentTarget) pickNewTarget();
+      }
+
+      function pickNewTarget() {
+        if (availableKeys.length === 0) updateAvailableKeys();
+        const candidates = availableKeys.filter(d => !currentTarget || d.code !== currentTarget.code);
+        const newTarget = candidates.length ? candidates[Math.floor(Math.random() * candidates.length)] : availableKeys[0];
+        setTarget(newTarget);
+      }
+
+      function setTarget(keyDef) {
+        if (currentTarget && keyElementsMap[currentTarget.code]) keyElementsMap[currentTarget.code].classList.remove('target-highlight');
+        currentTarget = keyDef;
+        targetDisplay.textContent = keyDef.display;
+        targetDisplay.style.color = fingerColors[keyDef.finger] || '#fff';
+        targetDisplay.style.textShadow = `0 0 40px ${fingerColors[keyDef.finger] || '#fff'}`;
+        fingerNameEl.textContent = fingerNamesCN[keyDef.finger] || '—';
+        fingerNameEl.style.color = fingerColors[keyDef.finger] || '#aaa';
+        if (keyElementsMap[keyDef.code]) keyElementsMap[keyDef.code].classList.add('target-highlight');
+        targetDisplay.classList.remove('correct-flash', 'error-flash');
+        updateComboDisplay();
+      }
+
+      function handleKeyPress(code) {
+        if (isCoolingDown || !currentTarget) return;
+        if (code === currentTarget.code) handleCorrect(code);
+        else if (availableKeys.some(d => d.code === code)) handleError(code);
+      }
+
+      function handleCorrect(code) {
+        startCoolDown(180);
+        stats.correct++; stats.currentCombo++;
+        if (stats.currentCombo > stats.maxCombo) stats.maxCombo = stats.currentCombo;
+        if (!practiceStartTime) practiceStartTime = Date.now();
+        targetDisplay.classList.add('correct-flash');
+        if (keyElementsMap[code]) { keyElementsMap[code].classList.add('correct-press'); setTimeout(() => keyElementsMap[code]?.classList.remove('correct-press'), 250); }
+        playCorrect();
+        if (stats.currentCombo % 10 === 0) playCombo();
+        updateStats(); updateComboDisplay();
+        setTimeout(() => pickNewTarget(), 100);
+      }
+
+      function handleError(code) {
+        startCoolDown(120);
+        stats.errors++; stats.currentCombo = 0;
+        if (!practiceStartTime) practiceStartTime = Date.now();
+        targetDisplay.classList.add('error-flash');
+        if (keyElementsMap[code]) { keyElementsMap[code].classList.add('error-press'); setTimeout(() => keyElementsMap[code]?.classList.remove('error-press'), 350); }
+        playError();
+        updateStats(); updateComboDisplay();
+      }
+
+      function startCoolDown(ms) { isCoolingDown = true; setTimeout(() => { isCoolingDown = false; }, ms); }
+
+      function updateStats() {
+        statCorrect.textContent = stats.correct;
+        statErrors.textContent = stats.errors;
+        const total = stats.correct + stats.errors;
+        const acc = total > 0 ? Math.round((stats.correct / total) * 100) : 100;
+        statAccuracy.textContent = acc + '%';
+        statMaxCombo.textContent = stats.maxCombo;
+        if (practiceStartTime && stats.correct > 0) {
+          const min = (Date.now() - practiceStartTime) / 60000;
+          statSpeed.textContent = Math.round(stats.correct / Math.max(min, 0.05));
+        } else statSpeed.textContent = '0';
+        statAccuracy.style.color = acc >= 95 ? '#4ade80' : acc >= 80 ? '#fbbf24' : '#f87171';
+      }
+
+      function updateComboDisplay() {
+        const c = stats.currentCombo;
+        comboDisplay.classList.remove('hot', 'fire', 'god');
+        if (c >= 30) { comboDisplay.textContent = `🔥🔥🔥 神级连击 ×${c}！`; comboDisplay.classList.add('god'); }
+        else if (c >= 15) { comboDisplay.textContent = `🔥🔥 超级连击 ×${c}！`; comboDisplay.classList.add('fire'); }
+        else if (c >= 5) { comboDisplay.textContent = `🔥 连击 ×${c}`; comboDisplay.classList.add('hot'); }
+        else if (c > 0) comboDisplay.textContent = `连击 ×${c}`;
+        else comboDisplay.textContent = '';
+      }
+
+      function resetStats() {
+        stats = { correct: 0, errors: 0, maxCombo: 0, currentCombo: 0 };
+        practiceStartTime = null;
+        updateStats(); updateComboDisplay();
+        statAccuracy.style.color = '#6c8cff';
+      }
+
+      document.addEventListener('keydown', e => {
+        if (['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'Backspace'].includes(e.code)) e.preventDefault();
+        handleKeyPress(e.code);
+      });
+      document.addEventListener('keyup', e => {
+        if (['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'Backspace'].includes(e.code)) e.preventDefault();
+      });
+      document.addEventListener('contextmenu', e => { if (e.target.closest('.key')) e.preventDefault(); });
+
+      checkDigits.addEventListener('change', updateAvailableKeys);
+      checkFKeys.addEventListener('change', updateAvailableKeys);
+      checkLetters.addEventListener('change', updateAvailableKeys);
+      document.getElementById('resetBtn').addEventListener('click', () => { resetStats(); pickNewTarget(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      setInterval(() => {
+        if (practiceStartTime && stats.correct > 0) {
+          const min = (Date.now() - practiceStartTime) / 60000;
+          statSpeed.textContent = Math.round(stats.correct / Math.max(min, 0.05));
+        }
+      }, 2000);
+
+      buildKeyboard();
+      updateAvailableKeys();
+      pickNewTarget();
+      updateStats();
+      updateComboDisplay();
+    })();
+  </script>
+</body>
+
+</html>

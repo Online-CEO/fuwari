@@ -1,0 +1,58 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="104" y1="40" x2="1098" y2="593" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1723"/>
+      <stop offset="0.5" stop-color="#143149"/>
+      <stop offset="1" stop-color="#0D2334"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="96" y1="92" x2="1103" y2="538" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102739" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#0A1D2C" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="170" y1="170" x2="430" y2="425" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53E4D8"/>
+      <stop offset="1" stop-color="#5DA8FF"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="210" y1="298" x2="372" y2="422" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAC7A"/>
+      <stop offset="1" stop-color="#FF7F59"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.24">
+    <circle cx="182" cy="104" r="96" fill="#4BE6DE"/>
+    <circle cx="1027" cy="132" r="92" fill="#5BA7FF"/>
+    <circle cx="924" cy="512" r="120" fill="#FF8D5C"/>
+  </g>
+
+  <rect x="88" y="86" width="1024" height="458" rx="30" fill="url(#panel)" stroke="white" stroke-opacity="0.1"/>
+
+  <rect x="146" y="146" width="342" height="334" rx="28" fill="#0A1A27" stroke="white" stroke-opacity="0.08"/>
+  <circle cx="317" cy="239" r="92" fill="url(#accent)"/>
+  <circle cx="317" cy="226" r="44" fill="#FFD7C8"/>
+  <path d="M267 317C289 286 345 286 367 317" stroke="#FF8E61" stroke-width="15" stroke-linecap="round"/>
+  <path d="M264 186L237 158" stroke="#FF8E61" stroke-width="9" stroke-linecap="round"/>
+  <path d="M370 186L397 158" stroke="#FF8E61" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="298" cy="220" r="5.5" fill="#173244"/>
+  <circle cx="336" cy="220" r="5.5" fill="#173244"/>
+
+  <rect x="190" y="360" width="254" height="18" rx="9" fill="#17344A"/>
+  <rect x="190" y="391" width="182" height="16" rx="8" fill="#143047"/>
+  <rect x="190" y="424" width="98" height="34" rx="17" fill="url(#orange)"/>
+  <path d="M228 441H250" stroke="#0D2334" stroke-width="4" stroke-linecap="round"/>
+  <path d="M240 430L251 441L240 452" stroke="#0D2334" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M545 171H978" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+  <text x="545" y="215" fill="#8FD8FF" font-size="24" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">OPENAI CODEX /GOAL</text>
+  <text x="545" y="286" fill="white" font-size="54" font-weight="700" font-family="Segoe UI, Arial, sans-serif">告别单次指令</text>
+  <text x="545" y="348" fill="white" font-size="54" font-weight="700" font-family="Segoe UI, Arial, sans-serif">进入持续目标工作流</text>
+  <text x="545" y="407" fill="#D1E8FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">create / pause / resume / clear</text>
+
+  <rect x="545" y="438" width="295" height="54" rx="27" fill="url(#accent)"/>
+  <text x="603" y="473" fill="#0C2233" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">PERSISTED WORKFLOW</text>
+</svg>
