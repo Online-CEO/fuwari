@@ -1,6 +1,6 @@
 ---
 title: OpenClaw 小龙虾免费接入 ChatGPT Images 2.0 教程：无需 API Key，无需消耗 Token
-published: 2026-05-02
+published: 2026-05-01
 description: '这篇教程讲清楚如何在 OpenClaw 中通过 OpenAI Codex OAuth 接入 ChatGPT Images 2.0，对接 openai/gpt-image-2 做图，不单独配置 OpenAI API Key，也不走 OpenAI Platform 的按量 Token 计费。'
 image: './openclaw-chatgpt-images-2-cover.svg'
 tags: [OpenClaw, ChatGPT, AI绘图, GPT-Image-2, 教程]
