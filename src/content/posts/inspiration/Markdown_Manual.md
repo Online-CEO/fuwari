@@ -171,7 +171,7 @@ const result = a + b;  // ← 高亮
 ```
 
 <!-- 隐藏代码块，仅显示输出 -->
-```bash:output
+```bash
 $ pnpm run build
 ✓ built in 1.2s
 ```
