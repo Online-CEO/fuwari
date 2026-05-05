@@ -4,7 +4,7 @@ published: 2026-05-02
 description: '很多人以为 OpenClaw 小龙虾只是写代码的 AI 工具，但真正让人离不开它的，往往是浏览器操作、资料整理、记忆偏好、定时提醒、图片生成和账号隔离这些每天都会遇到的小事。'
 image: './openclaw-daily-use-cases-2026-cover.svg'
 tags: [OpenClaw, AI_Agent, 效率工具, 自动化, 日常工作流]
-category: 'AI教程'
+category: 'AI Agent'
 draft: false
 lang: 'zh_CN'
 ---

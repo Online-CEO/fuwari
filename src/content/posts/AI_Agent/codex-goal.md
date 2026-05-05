@@ -4,7 +4,7 @@ published: 2026-05-03
 description: '2026年 OpenAI Codex 0.128.0 正式引入 /goal 功能。本文深入解析这一功能，助你实现从“写代码”到“派任务”的效率飞跃。'
 image: './codex-goal-cover.svg'
 tags: [AI Agent, Codex, 自动化编程, OpenAI]
-category: 'AI教程'
+category: 'AI Agent'
 draft: false 
 lang: 'zh_CN'
 ---

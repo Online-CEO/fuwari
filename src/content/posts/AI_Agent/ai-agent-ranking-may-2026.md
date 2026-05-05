@@ -4,7 +4,7 @@ published: 2026-05-05
 description: '如果你想知道 2026 年 5 月最值得关注的 AI Agent 产品有哪些，这篇榜单给你一个更实际的参考。我按产品完成度、任务执行能力、可用性、生态热度和近期公开更新，整理出当前最值得关注的 8 个 AI Agent。'
 image: './ai-agent-ranking-may-2026-cover.svg'
 tags: [AI Agent, 排行榜, Codex, Claude Code, Devin, Manus, Jules]
-category: 'AI教程'
+category: 'AI Agent'
 draft: false
 lang: 'zh_CN'
 ---
