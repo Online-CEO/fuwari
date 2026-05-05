@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="98" y1="52" x2="1092" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4EFE4"/>
+      <stop offset="0.52" stop-color="#E7D7B8"/>
+      <stop offset="1" stop-color="#DCC29C"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="118" y1="84" x2="1082" y2="546" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18222B"/>
+      <stop offset="1" stop-color="#0F171E"/>
+    </linearGradient>
+    <linearGradient id="red" x1="132" y1="148" x2="388" y2="422" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A59"/>
+      <stop offset="1" stop-color="#D94B2B"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="180" y1="178" x2="314" y2="308" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE8A4"/>
+      <stop offset="1" stop-color="#F4B43F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <rect x="54" y="54" width="1092" height="522" rx="28" fill="url(#ink)"/>
+
+  <rect x="54" y="54" width="342" height="522" rx="28" fill="url(#red)"/>
+  <rect x="84" y="84" width="282" height="462" rx="22" fill="#10171E" fill-opacity="0.14" stroke="rgba(255,255,255,0.18)"/>
+
+  <circle cx="224" cy="196" r="72" fill="url(#gold)"/>
+  <text x="198" y="221" fill="#121A21" font-size="68" font-weight="900" font-family="Georgia, Times New Roman, serif">1</text>
+
+  <text x="104" y="304" fill="white" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">TOP PICKS</text>
+  <text x="104" y="346" fill="#FFDCCF" font-size="18" font-family="Segoe UI, Arial, sans-serif">CODEX</text>
+  <text x="104" y="378" fill="#FFDCCF" font-size="18" font-family="Segoe UI, Arial, sans-serif">CLAUDE CODE</text>
+  <text x="104" y="410" fill="#FFDCCF" font-size="18" font-family="Segoe UI, Arial, sans-serif">WORKSPACE AGENTS</text>
+  <text x="104" y="442" fill="#FFDCCF" font-size="18" font-family="Segoe UI, Arial, sans-serif">DEVIN · JULES · MANUS</text>
+
+  <path d="M100 486H320" stroke="#FFD7C9" stroke-width="2" stroke-opacity="0.6"/>
+  <text x="104" y="522" fill="#FFF4EF" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">MAY 2026</text>
+
+  <text x="444" y="148" fill="#F6EEDF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">RANKING REPORT</text>
+
+  <text x="440" y="236" fill="#FFF8EA" font-size="66" font-weight="900" font-family="Georgia, Times New Roman, serif">AI Agent</text>
+  <text x="440" y="314" fill="#FFF8EA" font-size="66" font-weight="900" font-family="Georgia, Times New Roman, serif">排行榜</text>
+
+  <text x="446" y="382" fill="#E7D6B7" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">2026 年 5 月，最值得关注的 8 个产品</text>
+
+  <rect x="444" y="426" width="564" height="92" rx="22" fill="#F3E7CF"/>
+  <text x="476" y="466" fill="#11181F" font-size="20" font-weight="800" font-family="Segoe UI, Arial, sans-serif">更重要的已经不是谁更会聊天</text>
+  <text x="476" y="502" fill="#11181F" font-size="20" font-weight="800" font-family="Segoe UI, Arial, sans-serif">而是谁更像一个真正能交付结果的 Agent</text>
+
+  <circle cx="1030" cy="132" r="14" fill="#FF7A59"/>
+  <circle cx="1066" cy="132" r="14" fill="#F4B43F"/>
+  <circle cx="1102" cy="132" r="14" fill="#F6EEDF"/>
+</svg>
