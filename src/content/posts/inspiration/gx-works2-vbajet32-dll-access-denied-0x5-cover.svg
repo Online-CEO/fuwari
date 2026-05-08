@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="36" x2="1108" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7F1F6"/>
+      <stop offset="0.52" stop-color="#D5E4EC"/>
+      <stop offset="1" stop-color="#C9DAE4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="86" y1="84" x2="1110" y2="546" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F7FA"/>
+    </linearGradient>
+    <linearGradient id="title" x1="606" y1="170" x2="1042" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1E24"/>
+      <stop offset="1" stop-color="#2D3B48"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="130" y1="128" x2="478" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DB0D0"/>
+      <stop offset="1" stop-color="#1973A6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="64" y="60" width="1072" height="510" rx="28" fill="url(#panel)" stroke="#D4DEE6"/>
+
+  <rect x="110" y="112" width="398" height="386" rx="22" fill="#F7FAFC" stroke="#D7E1E8"/>
+  <rect x="132" y="134" width="354" height="32" rx="10" fill="#E6EEF4"/>
+  <circle cx="156" cy="150" r="5" fill="#F96A5E"/>
+  <circle cx="174" cy="150" r="5" fill="#F4C14E"/>
+  <circle cx="192" cy="150" r="5" fill="#5CCB6E"/>
+
+  <rect x="146" y="188" width="324" height="222" rx="18" fill="white" stroke="#E0E6EC"/>
+  <path d="M422 188H470V236" fill="#2A78B5"/>
+  <path d="M422 188L470 236" stroke="#F2F6FA" stroke-width="3"/>
+  <text x="172" y="228" fill="#1C232B" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">GX Wor 文件错误</text>
+  <text x="172" y="278" fill="#2A323C" font-size="18" font-family="Segoe UI, Arial, sans-serif">在文件</text>
+  <text x="228" y="278" fill="#1D2730" font-size="18" font-family="Consolas, monospace">C:\WINDOWS\SysWOW64\vbajet32.dll</text>
+  <text x="172" y="308" fill="#2A323C" font-size="18" font-family="Segoe UI, Arial, sans-serif">上发生以下错误。</text>
+  <text x="172" y="360" fill="#171C22" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">拒绝访问。</text>
+  <text x="172" y="392" fill="#171C22" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">(0x5)</text>
+
+  <rect x="178" y="430" width="92" height="34" rx="9" fill="#F7FAFD" stroke="#BFD0DC"/>
+  <rect x="282" y="430" width="92" height="34" rx="9" fill="#F7FAFD" stroke="#BFD0DC"/>
+  <rect x="386" y="430" width="72" height="34" rx="9" fill="#F7FAFD" stroke="#BFD0DC"/>
+  <text x="208" y="452" fill="#25303A" font-size="15" font-family="Segoe UI, Arial, sans-serif">中止</text>
+  <text x="312" y="452" fill="#25303A" font-size="15" font-family="Segoe UI, Arial, sans-serif">重试</text>
+  <text x="408" y="452" fill="#25303A" font-size="15" font-family="Segoe UI, Arial, sans-serif">忽略</text>
+
+  <text x="560" y="152" fill="#5B6B79" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">GX WORKS2 INSTALL ERROR</text>
+  <text x="560" y="242" fill="url(#title)" font-size="54" font-weight="800" font-family="Segoe UI, Arial, sans-serif">vbajet32.dll</text>
+  <text x="560" y="305" fill="url(#title)" font-size="54" font-weight="800" font-family="Segoe UI, Arial, sans-serif">拒绝访问 0x5</text>
+  <text x="560" y="372" fill="#4D5D6B" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Windows 11 安装 GX Works2 报错怎么解决？</text>
+
+  <rect x="560" y="416" width="410" height="58" rx="29" fill="url(#accent)"/>
+  <text x="765" y="453" text-anchor="middle" fill="white" font-size="25" font-weight="800" font-family="Segoe UI, Arial, sans-serif">OWNERSHIP + PERMISSION FIX</text>
+
+  <rect x="560" y="494" width="120" height="30" rx="15" fill="#E9F4FA"/>
+  <text x="620" y="514" text-anchor="middle" fill="#245A7A" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">亲测有效</text>
+  <rect x="694" y="494" width="140" height="30" rx="15" fill="#E9F4FA"/>
+  <text x="764" y="514" text-anchor="middle" fill="#245A7A" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">管理员安装</text>
+</svg>
