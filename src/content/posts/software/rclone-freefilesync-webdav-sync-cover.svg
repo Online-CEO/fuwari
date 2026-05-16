@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">rclone WebDAV 文件同步指南</title>
+  <desc id="desc">A cover image for an article about installing rclone, mounting WebDAV, and syncing files with FreeFileSync.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f" />
+      <stop offset="52%" stop-color="#123961" />
+      <stop offset="100%" stop-color="#1f7a8c" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="chip1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="chip2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+    <linearGradient id="chip3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f9a8d4" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1040" cy="84" r="150" fill="#67e8f9" opacity="0.11" />
+  <circle cx="114" cy="560" r="210" fill="#86efac" opacity="0.09" />
+  <rect x="68" y="62" width="1064" height="506" rx="30" fill="url(#glass)" stroke="#dbeafe" stroke-opacity="0.22" />
+
+  <text x="112" y="140" fill="#dbeafe" font-size="20" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">WINDOWS / WEBDAV / SYNC WORKFLOW</text>
+  <text x="112" y="228" fill="#f8fafc" font-size="60" font-family="Segoe UI, Arial, sans-serif" font-weight="800">rclone + WebDAV</text>
+  <text x="112" y="300" fill="#f8fafc" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="800">文件同步指南</text>
+  <text x="112" y="356" fill="#dbeafe" font-size="26" font-family="Segoe UI, Arial, sans-serif">安装、挂载、copy、sync 与 FreeFileSync 实战</text>
+
+  <rect x="112" y="406" width="178" height="44" rx="22" fill="url(#chip1)" />
+  <rect x="306" y="406" width="144" height="44" rx="22" fill="url(#chip2)" />
+  <rect x="466" y="406" width="206" height="44" rx="22" fill="url(#chip3)" />
+  <text x="145" y="435" fill="#082032" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">RCLONE</text>
+  <text x="339" y="435" fill="#082814" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">WEBDAV</text>
+  <text x="501" y="435" fill="#33153f" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">FREEFILESYNC</text>
+
+  <rect x="760" y="124" width="278" height="118" rx="22" fill="#08111d" stroke="#38bdf8" stroke-opacity="0.5" />
+  <rect x="760" y="256" width="278" height="118" rx="22" fill="#08111d" stroke="#4ade80" stroke-opacity="0.5" />
+  <rect x="760" y="388" width="278" height="118" rx="22" fill="#08111d" stroke="#c084fc" stroke-opacity="0.5" />
+  <path d="M700 183 H760" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round" />
+  <path d="M700 315 H760" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round" />
+  <path d="M730 167 L760 183 L730 199" fill="none" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M730 299 L760 315 L730 331" fill="none" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+  <text x="790" y="165" fill="#7dd3fc" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">本地目录</text>
+  <text x="790" y="205" fill="#e5e7eb" font-size="20" font-family="Consolas, monospace">A:\01.Common Files</text>
+
+  <text x="790" y="297" fill="#86efac" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">rclone 命令</text>
+  <text x="790" y="337" fill="#e5e7eb" font-size="20" font-family="Consolas, monospace">mount / copy / sync</text>
+
+  <text x="790" y="429" fill="#f0abfc" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">远程路径</text>
+  <text x="790" y="469" fill="#e5e7eb" font-size="20" font-family="Consolas, monospace">ctfile:02.Workspace</text>
+</svg>
