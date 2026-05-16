@@ -4,7 +4,7 @@ published: 2026-05-16
 description: "从 Windows 安装 rclone、配置 PATH，到 WebDAV 挂载、copy、sync 与 FreeFileSync 联动，这篇文章把整套文件同步流程一次讲清楚。"
 image: "./rclone-freefilesync-webdav-sync-cover.svg"
 tags: [rclone, WebDAV, FreeFileSync, Windows, 同步]
-category: "软件工具"
+category: "精品软件"
 draft: false
 lang: "zh_CN"
 ---
